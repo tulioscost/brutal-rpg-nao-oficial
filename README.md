@@ -1,6 +1,6 @@
 # BRUTAL RPG — Sistema comunitário para Foundry VTT
 
-**Versão do pacote:** 0.1.0 (primeira adaptação funcional)
+**Versão do pacote:** 0.2.0 (fichas responsivas e compêndios originais)
 **Livro utilizado:** *BRUTAL RPG 0.3*, Léo “Craw” Naito, Bruce Barbosa e Thales “Bif” Cunha, Editora New Order.
 **Alvo de implementação:** Foundry VTT 14, incluindo o build 14.369.
 **Status de testes:** sintaxe JavaScript e verificações automatizadas do motor aprovadas; **ainda não foi possível executar uma sessão dentro de uma instalação real do Foundry 14.369**. Trata-se de uma versão inicial, não de um sistema oficial ou certificado.
@@ -10,7 +10,7 @@
 ## Repositório e distribuição
 
 - **Código-fonte:** https://github.com/tulioscost/brutal-rpg-nao-oficial
-- **Pacote para Release `v0.1.0`:** `brutal-rpg-v0.1.0.zip` (conteúdo instalável, `system.json` na raiz)
+- **Assets da Release `v0.2.0`:** `brutal-rpg-v0.2.0.zip` (instalável), `system.json` (manifesto) e `RELEASE_v0.2.0.md` (notas)
 - **Manifesto estável:** `https://raw.githubusercontent.com/tulioscost/brutal-rpg-nao-oficial/main/system.json`
 - **Publicação:** [docs/PUBLICACAO.md](docs/PUBLICACAO.md)
 - **Compilação reprodutível do ZIP:** `python3 scripts/build_release.py`
@@ -19,9 +19,9 @@
 
 1. Feche o Foundry VTT (ou interrompa seu servidor).
 2. Abra a pasta de dados do Foundry. Dentro de `Data/systems`, crie uma pasta `brutal-rpg`.
-3. Extraia o conteúdo de `brutal-rpg-v0.1.0.zip` **dentro dessa pasta**. O manifesto deve ficar em `Data/systems/brutal-rpg/system.json` (e não em subpasta dupla).
+3. Extraia o conteúdo de `brutal-rpg-v0.2.0.zip` **dentro dessa pasta**. O manifesto deve ficar em `Data/systems/brutal-rpg/system.json` (e não em subpasta dupla).
 4. Inicie o Foundry 14.369, crie um Mundo e escolha o sistema **BRUTAL RPG — Sistema Comunitário**.
-5. Como GM, execute a macro ou o comando `await game.brutal.installCatalogue();` no console do navegador (F12). Isso cria uma pasta com 90+ referências no diretório de Itens do Mundo.
+5. Na primeira entrada como Diretora, três compêndios serão criados no Mundo automaticamente: **BRUTAL | Assassinos**, **BRUTAL | Sobreviventes** e **BRUTAL | Itens**. Para reinstalar sem duplicar, execute `await game.brutal.installCompendiums();` pelo console (F12) ou pela macro 07. O comando `installCatalogue()` permanece disponível para importar referências do manual em pasta separada.
 6. Crie personagens nas fichas `sobrevivente` ou `assassino` pela aba de Atores.
 7. Na ficha de Sobrevivente, selecione o Arquétipo e clique em **Aplicar 5 Vantagens do Arquétipo** e, em seguida, **Adicionar Habilidade Inicial**.
 8. Na ficha do Assassino, escolha Ameaça Primária e Secundária; clique em **Calcular Pilhas Iniciais**, que também define o Assassino ativo.
@@ -31,14 +31,16 @@
 
 `https://raw.githubusercontent.com/tulioscost/brutal-rpg-nao-oficial/main/system.json`
 
-O `system.json` na raiz do repositório aponta para o arquivo `brutal-rpg-v0.1.0.zip` da Release `v0.1.0`. **Esse link só funciona quando o código-fonte e a Release tiverem sido publicados**, com esses nomes exatos. Para publicação, consulte [docs/PUBLICACAO.md](docs/PUBLICACAO.md).
+O `system.json` na raiz do repositório aponta para o arquivo `brutal-rpg-v0.2.0.zip` da Release `v0.2.0`. **Esse link só funciona quando o código-fonte e a Release tiverem sido publicados**, com esses nomes exatos. Para publicação, consulte [docs/PUBLICACAO.md](docs/PUBLICACAO.md).
 
 ## Recursos presentes
 
-- Fichas próprias e responsivas para Sobrevivente e Assassino, em português, com estética slasher vermelha e preta.
+- Fichas próprias e responsivas para Sobrevivente e Assassino, em português, com estética slasher vermelha e preta; retrato alterável pelo botão **Trocar foto** e atualização da imagem padrão do token.
+- Compêndios de Mundo com **20 Assassinos**, **24 Sobreviventes** e **108 Itens** originais, com histórias, segredos, pistas e equipamentos, estruturados em JSON e instalados automaticamente pela primeira Diretora.
+- Quarto tipo de Item: **Equipamento**, objeto narrativo sem bônus automático; a norma de um Recurso por Sobrevivente é respeitada nas fichas pré-prontas.
 - Oito Arquétipos, seus respectivos Estilos e iniciativa fixa.
 - Treze Ameaças com Nível de Brutalidade correto, fórmulas de Pilha inicial, Horror, Fuga, Passos e Armadilhas.
-- Modelo de dados de oito tipos de itens: Habilidade, Vantagem, Recurso, Pista, Ameaça, Ação, Apavoro e Condição.
+- Modelo de dados de nove tipos de itens: Habilidade, Vantagem, Recurso, Pista, Ameaça, Ação, Apavoro, Condição e Equipamento.
 - Catálogo de referência com 48 nomes de Habilidades (6 por Arquétipo, sendo a sexta uma Cicatriz), além de vantagens, ações, ameaças, condições, estilos e manobras.
 - Rolagens d6 com dificuldade padrão 4, dificuldade reduzida por Estilo, Recursos e Testes Complexos.
 - Consequências automáticas de falhas: sacrificar à Diretora em Cena Livre/Suspense; descartar em Encontro/Susto.
@@ -58,19 +60,20 @@ O `system.json` na raiz do repositório aponta para o arquivo `brutal-rpg-v0.1.0
 - Rito de Iniciação, Clamores e Funções Ocultas; o campo de Função Oculta é visível apenas à GM na ficha.
 - Regras avançadas de Feridas, Sequelas, Condenações, Infecções, Maldições e Possessões.
 - Aplicação de restrições narrativas e do limite de um Recurso comum por Sobrevivente.
-- Construção de cenas, mapas, trilhas sonoras, baralho de Desafios, atores prontos e compêndios Foundry `.ldb`.
+- Construção de cenas, mapas, trilhas sonoras, baralho de Desafios e compêndios pré-empacotados em `.ldb`: nesta versão os compêndios são **criados no banco do Mundo**, a partir de JSON do sistema, no primeiro acesso da Diretora.
 - Adaptações para habilidades excepcionais (p.ex., Final Girl ou Sacrifício Heroico), que podem modificar manobras comuns.
 
 Nenhuma dessas funções é apresentada como totalmente automatizada nesta versão. O livro é a autoridade em situações divergentes.
 
 ## Macros
 
-A pasta `macros` inclui seis scripts opcionais. No Foundry, crie uma Macro de tipo **Script**, copie seu conteúdo e coloque-a na barra de atalhos. Também é possível executá-los pelo console (F12).
+A pasta `macros` inclui sete scripts opcionais, incluindo a instalação/atualização dos compêndios. No Foundry, crie uma Macro de tipo **Script**, copie seu conteúdo e coloque-a na barra de atalhos. Também é possível executá-los pelo console (F12).
 
 ## Comandos da API
 
 ```js
 await game.brutal.installCatalogue(); // importa referências ao diretório de Itens
+await game.brutal.installCompendiums(); // cria/atualiza 3 compêndios do Mundo
 await game.brutal.startEncounter();     // encontro e pilhas de fuga
 await game.brutal.endEncounter();       // devolve dados de fuga
 await game.brutal.startSuspense();
@@ -82,7 +85,7 @@ await game.brutal.newSession();         // reinicia marcadores de sessão
 
 `node tests/smoke.mjs`
 
-Os testes usam um ambiente simulado (sem servidor Foundry) para verificar fórmula NB, modelos de Arquétipos e lógica de rolagem, descarte, recuperação, Suspense e fuga.
+Os testes usam ambiente simulado (sem servidor Foundry) para verificar fórmula NB, modelos de Arquétipos, rolagem, descarte, recuperação, Suspense, fuga e os três compêndios, incluindo importação sem duplicação: `node tests/smoke.mjs && node tests/compendiums.mjs`.
 
 ## Arquitetura
 
@@ -96,3 +99,15 @@ Os testes usam um ambiente simulado (sem servidor Foundry) para verificar fórmu
 - `templates/` e `styles/` — interface Handlebars/CSS;
 - `assets/` — SVGs originais, sem imagens retiradas do livro;
 - `tests/` — testes independentes de Foundry.
+
+## Compêndios e retratos (v0.2.0)
+
+- **Assassinos**: 20 fichas prontas; historia, estigma, intentos, segredo da Diretora, pista, Ameaças e objetos. Privado para GM por padrão.
+- **Sobreviventes**: 24 fichas prontas, 3 por Arquétipo; história, Item Icônico, vínculo, desejo, segredo da Diretora e inventário. Privado para GM por padrão (para não revelar segredos); importe personagens ao Mundo para compartilhá-los.
+- **Itens**: 108 entradas: Recursos (3 usos), Pistas (5 usos compartilhados) e Equipamentos (0 usos, uso narrativo). A Diretora administra os limites e a obtenção de Pistas.
+
+**Importante:** os três pacotes são *compêndios do Mundo*, gerados pelo próprio Foundry com os arquivos da pasta `data/compendios`. Não se trata de arquivos LevelDB (`.ldb`) pré-empacotados. A criação é automática na primeira entrada de um GM ativo; o botão **Instalar / Atualizar Compêndios** na aba Itens e a macro `07-instalar-compendios.js` podem repetir a importação, preservando personagens já modificados. Como compêndios do Mundo, persistem independentemente da versão instalada do sistema.
+
+**Troca de retrato:** clique em **Trocar foto** no canto inferior da imagem da ficha; use o seletor do Foundry para escolher ou enviar o arquivo. A imagem é salva em `actor.img` e na textura do protótipo do token. Personagens importados com retrato personalizado preservam a imagem ao atualizar os acervos (não são sobrescritos).
+
+**Pesquisa e inspiração:** consulte [docs/REFERENCIAS.md](docs/REFERENCIAS.md). Todos os perfis têm identidade, biografia e equipamentos originais; não reproduzem personagens de filmes, livros ou jogos.

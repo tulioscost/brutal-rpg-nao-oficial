@@ -3,7 +3,10 @@
 {{else}}
 <section class="brutal-wrap">
   <header class="brutal-banner">
-    <div class="brutal-portrait"><img src="{{actor.img}}" alt="Retrato"/></div>
+    <div class="brutal-portrait">
+      <img src="{{actor.img}}" alt="Retrato de {{actor.name}}" loading="lazy" />
+      {{#if owner}}<button type="button" class="brutal-portrait-edit" data-action="change-portrait" aria-label="Trocar imagem do personagem" title="Trocar retrato (arquivos do Foundry)"><i class="fa-solid fa-camera"></i><span>TROCAR FOTO</span></button>{{/if}}
+    </div>
     <div class="brutal-headline">
       <div class="brutal-eyebrow">BRUTAL <span>—</span> {{#if isSurvivor}}DOSSIÊ DE SOBREVIVENTE{{else}}DOSSIÊ DO ASSASSINO{{/if}}</div>
       <input class="brutal-name" name="name" value="{{actor.name}}" aria-label="Nome do personagem" {{#unless owner}}disabled{{/unless}} />
@@ -78,9 +81,10 @@
     {{/if}}
   </section>
   <section class="brutal-pane" data-pane="itens">
+    {{#if gm}}<div class="brutal-panel brutal-import-tools"><h3>ACERVO DO THRILLER</h3><p class="brutal-help">Crie ou complemente os três compêndios de Assassinos, Sobreviventes e Itens. Importação preserva documentos já existentes.</p><div class="brutal-actions"><button type="button" data-action="install-compendiums">INSTALAR / ATUALIZAR COMPÊNDIOS</button></div></div>{{/if}}
     <div class="brutal-panel"><h3>HABILIDADES <button type="button" data-action="item-create" data-type="habilidade">+</button></h3>{{#each abilities}}<div class="brutal-inventory"><button type="button" data-action="item-open" data-item-id="{{id}}">{{name}}</button><small>p. {{system.page}}</small><button type="button" data-action="item-delete" data-item-id="{{id}}">×</button></div>{{/each}}</div>
     <div class="brutal-panel"><h3>VANTAGENS <button type="button" data-action="item-create" data-type="vantagem">+</button></h3>{{#each advantages}}<div class="brutal-inventory"><button type="button" data-action="item-open" data-item-id="{{id}}">{{name}}</button><small>{{system.cost}} PT • {{system.style}}</small><button type="button" data-action="item-delete" data-item-id="{{id}}">×</button></div>{{/each}}</div>
-    <div class="brutal-panel"><h3>RECURSOS & PISTAS <button type="button" data-action="item-create" data-type="recurso">+ RECURSO</button><button type="button" data-action="item-create" data-type="pista">+ PISTA</button></h3>{{#each equipment}}<div class="brutal-inventory"><button type="button" data-action="item-open" data-item-id="{{id}}">{{name}}</button><small>{{system.uses.value}} / {{system.uses.max}} usos</small><button type="button" data-action="res-use" data-item-id="{{id}}">USAR</button><button type="button" data-action="item-delete" data-item-id="{{id}}">×</button></div>{{/each}}</div>
+    <div class="brutal-panel"><h3>RECURSOS, PISTAS & EQUIPAMENTOS <button type="button" data-action="item-create" data-type="recurso">+ RECURSO</button><button type="button" data-action="item-create" data-type="pista">+ PISTA</button><button type="button" data-action="item-create" data-type="equipamento">+ OBJETO</button></h3>{{#each equipment}}<div class="brutal-inventory"><button type="button" data-action="item-open" data-item-id="{{id}}">{{name}}</button><small>{{type}} • {{system.uses.value}} / {{system.uses.max}} usos</small><button type="button" data-action="res-use" data-item-id="{{id}}" {{#unless system.uses.value}}disabled{{/unless}}>USAR</button><button type="button" data-action="item-delete" data-item-id="{{id}}">×</button></div>{{/each}}</div>
     {{#unless isSurvivor}}<div class="brutal-panel"><h3>AÇÕES, APAVOROS & AMEAÇAS <button type="button" data-action="item-create" data-type="acao">+ AÇÃO</button><button type="button" data-action="item-create" data-type="apavoro">+ APAVORO</button></h3>{{#each actions}}<div class="brutal-inventory"><button type="button" data-action="item-open" data-item-id="{{id}}">{{name}}</button><small>{{type}}</small><button type="button" data-action="item-delete" data-item-id="{{id}}">×</button></div>{{/each}}</div>{{/unless}}
   </section>
   <section class="brutal-pane" data-pane="historia">

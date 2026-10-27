@@ -8,7 +8,7 @@ import shutil
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-RUNTIME_DIRS = ("module", "styles", "templates", "assets", "lang", "macros")
+RUNTIME_DIRS = ("module", "styles", "templates", "assets", "lang", "macros", "data")
 RUNTIME_FILES = ("system.json", "brutal.mjs", "README.md")
 
 def build(tag=None):
@@ -37,6 +37,10 @@ def build(tag=None):
             info.external_attr = (0o100644 << 16)
             archive.writestr(info, file.read_bytes(), compress_type=ZIP_DEFLATED, compresslevel=9)
     shutil.copy2(ROOT / "system.json", out / "system.json")
+    notes = ROOT / f"RELEASE_{expected_tag}.md"
+    if not notes.exists():
+        raise FileNotFoundError(f"Notas da versão ausentes: {notes.name}")
+    shutil.copy2(notes, out / notes.name)
     with ZipFile(target) as z:
         if "system.json" not in z.namelist() or "brutal.mjs" not in z.namelist():
             raise RuntimeError("ZIP não contém arquivos fundamentais na raiz")

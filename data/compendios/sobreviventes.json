@@ -1,0 +1,2042 @@
+[
+  {
+    "name": "Lia Azevedo",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-01",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Lia Azevedo",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Lia Azevedo, operadora de resgate. Deixou a equipe de busca após uma operação em que seguiu o protocolo e perdeu a chance de salvar o irmão. Ao receber uma chamada de rádio com a voz dele, vai investigar o reservatório interditado. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Reservatório\nSEGREDO (para a Diretora): Ouvinte secreto da frequência de emergência\nMOTIVAÇÃO: Provar que os registros de resgate foram alterados",
+      "archetype": "heroina",
+      "initiative": 1,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "operadora de resgate, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Bússola herdada",
+      "bond": "Proteger a sobrinha Júlia",
+      "darkDesire": "Provar que os registros de resgate foram alterados"
+    },
+    "items": [
+      {
+        "name": "Lanterna de emergência",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Ilumina áreas sem energia e ajuda a localizar inscrições no escuro.",
+          "page": 80,
+          "notes": "A bateria fica instável sob chuva. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Corda de salvamento",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Auxilia travessias e resgates em locais perigosos.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Bússola marítima",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Permite orientar-se em áreas sem referências visuais.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Davi Uchoa",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-02",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Davi Uchoa",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Davi Uchoa, entregador ciclista. Conhece rotas que os aplicativos ignoram, mas sua pressa causou um acidente que ainda esconde. Uma entrega sem remetente conduz à estação onde o último trem deveria ter parado. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Estação\nSEGREDO (para a Diretora): Testemunha de uma despedida na plataforma\nMOTIVAÇÃO: Encontrar o dono do pacote anônimo",
+      "archetype": "atleta",
+      "initiative": 2,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "entregador ciclista, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Campainha da bicicleta",
+      "bond": "Voltar a conversar com a mãe",
+      "darkDesire": "Encontrar o dono do pacote anônimo"
+    },
+    "items": [
+      {
+        "name": "Capacete de ciclista",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Protege a cabeça em cena; efeito mecânico depende da Diretora.",
+          "page": 0,
+          "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Lanterna de bolso",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Oferece luz móvel em corredores e passagens estreitas.",
+          "page": 80,
+          "notes": "O feixe é visível à distância. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Bilhete perfurado",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "A sequência de furos indica uma plataforma fora do mapa público.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Estação",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Mina Okafor",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-03",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Mina Okafor",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Mina Okafor, estudante de áudio. Restaura gravações de rádio e descobriu vozes cortadas de uma transmissão pública. Trabalha na biblioteca durante o dia e sobe a torre à noite para comparar arquivos. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Torre\nSEGREDO (para a Diretora): Foi ela quem enviou uma gravação ao jornal local\nMOTIVAÇÃO: Descobrir quem alterou a fita mestre",
+      "archetype": "nerd",
+      "initiative": 6,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "estudante de áudio, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Fone de ouvido remendado",
+      "bond": "Cuidar da irmã pequena",
+      "darkDesire": "Descobrir quem alterou a fita mestre"
+    },
+    "items": [
+      {
+        "name": "Gravador portátil",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Registra sons, pistas e ameaças sem depender de rede.",
+          "page": 80,
+          "notes": "A gravação pode conter ruído. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Pilhas sobressalentes",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Mantêm equipamentos simples em funcionamento.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Cópia de gravação",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "Um segundo canal de áudio revela a voz do operador oculto.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Torre",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Rafaela Sato",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-04",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Rafaela Sato",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Rafaela Sato, engenheira civil. Inspecionou um prédio condenado e assinou um relatório sob pressão para manter o emprego. Quando novas portas aparecem em apartamentos vazios, retorna para conferir a planta original. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Condomínio\nSEGREDO (para a Diretora): Guarda uma cópia nunca protocolada do laudo\nMOTIVAÇÃO: Expor a fraude da obra",
+      "archetype": "cetica",
+      "initiative": 8,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "engenheira civil, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Lapiseira metálica",
+      "bond": "Reconquistar a confiança da equipe",
+      "darkDesire": "Expor a fraude da obra"
+    },
+    "items": [
+      {
+        "name": "Planta arquitetônica",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Revela saídas previstas e espaços ocultos de edifícios.",
+          "page": 80,
+          "notes": "Reformas podem ter alterado o plano. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Multímetro",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Auxilia na verificação de circuitos e painéis.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Lanterna de emergência",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Ilumina áreas sem energia e ajuda a localizar inscrições no escuro.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Teo Nascimento",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-05",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Teo Nascimento",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Teo Nascimento, assistente de produção. O único membro de uma equipe audiovisual que não se impressiona com superstições passou a receber cortes de vídeo que ninguém filmou. Volta ao cinema fechado com uma filmadora emprestada. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Cinema\nSEGREDO (para a Diretora): O filme final revela uma discussão que ele apagou\nMOTIVAÇÃO: Montar o filme proibido",
+      "archetype": "relaxada",
+      "initiative": 7,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "assistente de produção, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Chaveiro de claquete",
+      "bond": "Proteger a amiga de infância",
+      "darkDesire": "Montar o filme proibido"
+    },
+    "items": [
+      {
+        "name": "Filmadora portátil",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Permite examinar detalhes que passaram despercebidos.",
+          "page": 80,
+          "notes": "A bateria e a memória são limitadas. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Rolo de película",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "O último fotograma mostra uma pessoa saindo pela cabine de projeção.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Cinema",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Chave da cabine",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Objeto ligado à história de O Homem dos Cartazes; peça recorrente no cenário cinema de rua.",
+          "page": 0,
+          "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Bruna Cavalcanti",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-06",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Bruna Cavalcanti",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Bruna Cavalcanti, segurança de eventos. Cansada de ser chamada de agressiva por impedir um tumulto, aceitou trabalhar no teatro municipal durante a reabertura. Reconhece a fita vermelha deixada na porta de serviço. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Teatro\nSEGREDO (para a Diretora): Sua irmã costurou os uniformes do teatro\nMOTIVAÇÃO: Descobrir quem abriu o depósito",
+      "archetype": "valentona",
+      "initiative": 3,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "segurança de eventos, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Pulseira de metal",
+      "bond": "Encontrar a irmã",
+      "darkDesire": "Descobrir quem abriu o depósito"
+    },
+    "items": [
+      {
+        "name": "Apito de segurança",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Produz sinal agudo para reunir uma equipe.",
+          "page": 0,
+          "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Lanterna de bolso",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Oferece luz móvel em corredores e passagens estreitas.",
+          "page": 80,
+          "notes": "O feixe é visível à distância. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Fita métrica vermelha",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "Marcas de tinta ligam duas figuras aos figurinos antigos.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Teatro",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Yara Freitas",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-07",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Yara Freitas",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Yara Freitas, voluntária de biblioteca. Chegou à vila costeira para catalogar arquivos históricos e encontrou nomes riscados em documentos públicos. Pensa que os moradores estão brincando com ela até ouvir sua história em um sino. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Vila costeira\nSEGREDO (para a Diretora): Sua avó consta entre os desaparecidos\nMOTIVAÇÃO: Restituir os nomes perdidos",
+      "archetype": "inocente",
+      "initiative": 5,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "voluntária de biblioteca, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Postal antigo",
+      "bond": "Visitar o lugar de origem da família",
+      "darkDesire": "Restituir os nomes perdidos"
+    },
+    "items": [
+      {
+        "name": "Caderno de campo",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Organiza descobertas e desenhos de localização.",
+          "page": 80,
+          "notes": "Anotações podem ser perdidas. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Bússola marítima",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Permite orientar-se em áreas sem referências visuais.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Postal de família",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "A mensagem no verso registra um endereço suprimido do mapa.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Vila costeira",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Íris Vieira",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-08",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Íris Vieira",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Íris Vieira, estudante de moda. Quer ser figurinista e ganhou acesso aos arquivos do teatro após um concurso de figurinos. Os vestidos parecem mudar de tamanho durante a madrugada, mas as etiquetas apontam para seu antigo sobrenome. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Teatro\nSEGREDO (para a Diretora): Sua família comprou parte do acervo sem recibo\nMOTIVAÇÃO: Recuperar uma peça de roupa da infância",
+      "archetype": "esbelta",
+      "initiative": 4,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "estudante de moda, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Colar de linha vermelha",
+      "bond": "Superar a rivalidade com a prima",
+      "darkDesire": "Recuperar uma peça de roupa da infância"
+    },
+    "items": [
+      {
+        "name": "Estojo de costura",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Contém agulhas, linhas e materiais comuns.",
+          "page": 0,
+          "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Tesoura de alfaiate",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Ferramenta de corte pertencente ao ateliê.",
+          "page": 0,
+          "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Cartaz de espetáculo",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "O programa lista uma substituta nunca anunciada.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Teatro",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Caio Menezes",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-09",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Caio Menezes",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Caio Menezes, guarda-parque. Fez do jardim botânico seu primeiro emprego e considera cada trilha uma memória. Reúne antigos voluntários quando uma estufa aparece trancada por dentro. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Jardim\nSEGREDO (para a Diretora): Sabe que o depósito de sementes foi esvaziado antes do fechamento\nMOTIVAÇÃO: Descobrir quem vendeu as plantas",
+      "archetype": "heroina",
+      "initiative": 1,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "guarda-parque, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Canivete de cabo verde",
+      "bond": "Cuidar do antigo mentor",
+      "darkDesire": "Descobrir quem vendeu as plantas"
+    },
+    "items": [
+      {
+        "name": "Mapa botânico",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Ajuda a localizar trilhas de serviço em áreas verdes.",
+          "page": 80,
+          "notes": "O mapa é antigo. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Rádio de ondas curtas",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Capta comunicação fora da cobertura de celulares.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Corda de salvamento",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Auxilia travessias e resgates em locais perigosos.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Nádia Rodrigues",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-10",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Nádia Rodrigues",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Nádia Rodrigues, nadadora de águas abertas. Preparava-se para sua primeira travessia oceânica quando o sinal do farol mudou de direção. O mar parece devolver objetos perdidos conforme a luz gira. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Farol\nSEGREDO (para a Diretora): Seu treinador participou da travessia que sumiu\nMOTIVAÇÃO: Terminar a travessia interrompida",
+      "archetype": "atleta",
+      "initiative": 2,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "nadadora de águas abertas, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Touca azul desgastada",
+      "bond": "Reconciliar-se com o treinador",
+      "darkDesire": "Terminar a travessia interrompida"
+    },
+    "items": [
+      {
+        "name": "Colete salva-vidas",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Ajuda uma pessoa em travessias aquáticas.",
+          "page": 80,
+          "notes": "Não elimina riscos do ambiente. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Lanterna de sinalização",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Emite sinais visíveis à distância.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Apito de resgate",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Produz aviso audível em espaços amplos.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Elias Brandão",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-11",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Elias Brandão",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Elias Brandão, técnico de informática. Consertava o software de cancela do pedágio quando percebeu cobranças duplicadas em placas antigas. Perdeu o emprego ao tentar salvar o arquivo de logs. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Pedágio\nSEGREDO (para a Diretora): Manteve uma cópia criptografada do banco\nMOTIVAÇÃO: Encontrar a origem da fraude",
+      "archetype": "nerd",
+      "initiative": 6,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "técnico de informática, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Pendrive de etiqueta laranja",
+      "bond": "Ajudar o pai caminhoneiro",
+      "darkDesire": "Encontrar a origem da fraude"
+    },
+    "items": [
+      {
+        "name": "Pendrive criptografado",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Permite transportar provas digitais para análise.",
+          "page": 80,
+          "notes": "O conteúdo requer acesso adequado. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Multímetro",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Auxilia na verificação de circuitos e painéis.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Bastão luminoso",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Sinalizador de trânsito e emergência.",
+          "page": 0,
+          "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Salma Haddad",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-12",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Salma Haddad",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Salma Haddad, jornalista investigativa. Chegou ao hospital para conferir uma lista de pacientes, porém encontrou duas fichas com o próprio nome. Prefere provas a boatos, mas evita falar da noite em que desapareceu por horas. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Hospital\nSEGREDO (para a Diretora): Seu crachá abre uma ala que deveria estar selada\nMOTIVAÇÃO: Publicar o caso verdadeiro",
+      "archetype": "cetica",
+      "initiative": 8,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "jornalista investigativa, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Bloco com capa preta",
+      "bond": "Reaproximar-se da editora",
+      "darkDesire": "Publicar o caso verdadeiro"
+    },
+    "items": [
+      {
+        "name": "Prontuário lacrado",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "O número do leito contradiz o mapa da ala hospitalar.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Hospital",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Gravador portátil",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Registra sons, pistas e ameaças sem depender de rede.",
+          "page": 80,
+          "notes": "A gravação pode conter ruído. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Lanterna clínica",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Auxilia exames e leitura de documentos em pouca luz.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Júlia Penha",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-13",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Júlia Penha",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Júlia Penha, fotógrafa de festas. Acha que conseguiu um trabalho fácil no parque fechado: fotografar uma comemoração privada. Descobre que os convites trazem as mesmas pessoas em idades diferentes. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Parque\nSEGREDO (para a Diretora): Uma foto sua aparece num aniversário anterior ao nascimento dela\nMOTIVAÇÃO: Encontrar a fotografia original",
+      "archetype": "relaxada",
+      "initiative": 7,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "fotógrafa de festas, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Câmera descartável",
+      "bond": "Ajudar seu namorado",
+      "darkDesire": "Encontrar a fotografia original"
+    },
+    "items": [
+      {
+        "name": "Câmera instantânea",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Registra imagens sem conexão com a internet.",
+          "page": 80,
+          "notes": "O número de poses é limitado. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Ingresso perfurado",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "A numeração identifica dois convites para o mesmo assento.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Parque",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Canivete pequeno",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Serve para reparos e soluções improvisadas.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Vitor Amarante",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-14",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Vitor Amarante",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Vitor Amarante, mecânico de ônibus. Reparava veículos de excursão até identificar uma peça instalada fora das especificações. Sua denúncia sumiu na mesma noite de um acidente na estrada. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Rodovia\nSEGREDO (para a Diretora): Ele foi pago para não reabrir a inspeção\nMOTIVAÇÃO: Fazer a verdade chegar às famílias",
+      "archetype": "valentona",
+      "initiative": 3,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "mecânico de ônibus, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Chave inglesa do avô",
+      "bond": "Cuidar de sua equipe",
+      "darkDesire": "Fazer a verdade chegar às famílias"
+    },
+    "items": [
+      {
+        "name": "Jogo de ferramentas",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Permite intervenções simples em estruturas e mecanismos.",
+          "page": 80,
+          "notes": "É volumoso e incompleto. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Colete refletivo",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Roupa de alta visibilidade rodoviária.",
+          "page": 0,
+          "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Ficha de atendimento",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "A assinatura aponta para alguém que esteve no posto antes da colisão.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Rodovia",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Maíra Campos",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-15",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Maíra Campos",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Maíra Campos, estagiária de enfermagem. Durante um plantão voluntário, encontrou pulseiras de identificação trocadas e tentou corrigir o erro antes da chefia chegar. Agora retorna ao hospital a pedido de uma pessoa sem prontuário. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Hospital\nSEGREDO (para a Diretora): É portadora da única chave que abre o arquivo em papel\nMOTIVAÇÃO: Encontrar o paciente sem registro",
+      "archetype": "inocente",
+      "initiative": 5,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "estagiária de enfermagem, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Broche de estrela",
+      "bond": "Preservar uma amizade no estágio",
+      "darkDesire": "Encontrar o paciente sem registro"
+    },
+    "items": [
+      {
+        "name": "Maleta de primeiros socorros",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Torna possível prestar cuidados narrativamente pertinentes.",
+          "page": 80,
+          "notes": "O tratamento segue as regras de ferimentos do manual. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Pulseira hospitalar",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "O código identifica um paciente internado sob nome falso.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Hospital",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Prontuário lacrado",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "O número do leito contradiz o mapa da ala hospitalar.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Hospital",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Aurora Antunes",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-16",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Aurora Antunes",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Aurora Antunes, cantora amadora. Um empresário prometeu gravar seu primeiro clipe no cinema restaurado, mas o cartaz de estreia a mostra com um rosto que não é o seu. Tem medo de revelar que roubou um trecho de música. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Cinema\nSEGREDO (para a Diretora): O refrão denuncia o local do microfone oculto\nMOTIVAÇÃO: Descobrir quem a filmou",
+      "archetype": "esbelta",
+      "initiative": 4,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "cantora amadora, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Anel de plástico cintilante",
+      "bond": "Não decepcionar o coral",
+      "darkDesire": "Descobrir quem a filmou"
+    },
+    "items": [
+      {
+        "name": "Microfone de mão",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Equipamento de apresentação.",
+          "page": 0,
+          "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Filmadora portátil",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Permite examinar detalhes que passaram despercebidos.",
+          "page": 80,
+          "notes": "A bateria e a memória são limitadas. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Chave da cabine",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Objeto ligado à história de O Homem dos Cartazes; peça recorrente no cenário cinema de rua.",
+          "page": 0,
+          "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Pedro Benício",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-17",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Pedro Benício",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Pedro Benício, bombeiro voluntário. Foi chamado para buscar um desaparecido na serra e encontrou o hotel fechado por uma frente fria. A planta de evacuação não corresponde aos corredores em que sua equipe anda. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Hotel\nSEGREDO (para a Diretora): Já esteve no hotel anos atrás e apagou sua assinatura do livro\nMOTIVAÇÃO: Corrigir um erro de resgate",
+      "archetype": "heroina",
+      "initiative": 1,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "bombeiro voluntário, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Mosquetão azul",
+      "bond": "Encontrar o colega afastado",
+      "darkDesire": "Corrigir um erro de resgate"
+    },
+    "items": [
+      {
+        "name": "Corda de salvamento",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Auxilia travessias e resgates em locais perigosos.",
+          "page": 80,
+          "notes": "Precisa de ponto seguro de ancoragem. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Piolet de escalada",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Ferramenta de montanha especializada.",
+          "page": 0,
+          "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Apito de resgate",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Produz aviso audível em espaços amplos.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Keila Amorim",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-18",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Keila Amorim",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Keila Amorim, instrutora de dança. Ensaiava um espetáculo no salão do internato restaurado quando um sino interrompeu o som. Conhece a coreografia de uma turma antiga sem nunca tê-la estudado. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Internato\nSEGREDO (para a Diretora): A gravação do ensaio revela passos fora da contagem\nMOTIVAÇÃO: Entender quem enviou o convite",
+      "archetype": "atleta",
+      "initiative": 2,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "instrutora de dança, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Sapatos vermelhos de aula",
+      "bond": "Proteger seu grupo",
+      "darkDesire": "Entender quem enviou o convite"
+    },
+    "items": [
+      {
+        "name": "Rádio portátil",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Mantém contato a curta distância, se houver sinal.",
+          "page": 80,
+          "notes": "Canal pode ser interceptado. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Sino escolar",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Peça que sinaliza intervalos e horários.",
+          "page": 0,
+          "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Caderno de campo",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Organiza descobertas e desenhos de localização.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Tainá Ribeiro",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-19",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Tainá Ribeiro",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Tainá Ribeiro, restauradora de documentos. Especializou-se em documentos frágeis e recebeu a encomenda de recuperar um álbum encontrado numa galeria. As fotos revelam cômodos que ainda não foram construídos. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Galeria\nSEGREDO (para a Diretora): Um negativo contém sua assinatura futura\nMOTIVAÇÃO: Descobrir quem fotografou o álbum",
+      "archetype": "nerd",
+      "initiative": 6,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "restauradora de documentos, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Lupa de bolso",
+      "bond": "Trabalhar com seu pai",
+      "darkDesire": "Descobrir quem fotografou o álbum"
+    },
+    "items": [
+      {
+        "name": "Lupa de inspeção",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Ajuda a examinar detalhes de documentos e superfícies.",
+          "page": 80,
+          "notes": "Exige tempo e iluminação. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Negativo fotográfico",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "Uma janela reflete um corredor que não aparece nas plantas.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Galeria",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Álbum de retratos",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "A ordem das fotografias produz uma mensagem codificada.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Galeria",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Samir Fernandes",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-20",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Samir Fernandes",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Samir Fernandes, técnico de saneamento. Foi designado para localizar um vazamento no aquário fechado. Ao analisar o fluxo da água, percebe que a drenagem funciona quando todos os motores estão desligados. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Aquário\nSEGREDO (para a Diretora): O sensor de pressão estava sendo falsificado manualmente\nMOTIVAÇÃO: Expor irregularidades ambientais",
+      "archetype": "cetica",
+      "initiative": 8,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "técnico de saneamento, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Caneta de medição",
+      "bond": "Voltar a estudar biologia",
+      "darkDesire": "Expor irregularidades ambientais"
+    },
+    "items": [
+      {
+        "name": "Multímetro",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Auxilia na verificação de circuitos e painéis.",
+          "page": 80,
+          "notes": "Não substitui ferramentas especializadas. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Roupa de mergulho",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Ajuda a suportar água fria em determinada cena.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Cartão magnético",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "Abre um acesso secundário da área técnica, se o leitor ainda funciona.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Aquário",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Luana Vieira",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-21",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Luana Vieira",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Luana Vieira, motorista de aplicativo. Conhece os postos da rodovia e costuma dar carona a desconhecidos. Quando o GPS manda fazer retorno para uma estrada inexistente, decide acompanhar um passageiro até um posto sem funcionários. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Rodovia\nSEGREDO (para a Diretora): O último passageiro deixou um telefone com chamada aberta\nMOTIVAÇÃO: Sair da estrada com todos os passageiros",
+      "archetype": "relaxada",
+      "initiative": 7,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "motorista de aplicativo, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Chaveiro em forma de nuvem",
+      "bond": "Buscar o filho na escola",
+      "darkDesire": "Sair da estrada com todos os passageiros"
+    },
+    "items": [
+      {
+        "name": "Mapa rodoviário",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Oferece alternativa aos aplicativos de navegação.",
+          "page": 80,
+          "notes": "Não reflete bloqueios recentes. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Colete refletivo",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Roupa de alta visibilidade rodoviária.",
+          "page": 0,
+          "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Maleta de primeiros socorros",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Torna possível prestar cuidados narrativamente pertinentes.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Otávio Costa",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-22",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Otávio Costa",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Otávio Costa, ex-lutador de bairro. Virou vigia de eventos na praça após abandonar competições. Repara que a mímica noturna repete um gesto que só sua irmã conhece e insiste em falar com a artista. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Feira\nSEGREDO (para a Diretora): Sua irmã participou do show que antecedeu a interdição\nMOTIVAÇÃO: Impedir o novo cancelamento da feira",
+      "archetype": "valentona",
+      "initiative": 3,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "ex-lutador de bairro, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Bandagem de treino",
+      "bond": "Fazer as pazes com a irmã",
+      "darkDesire": "Impedir o novo cancelamento da feira"
+    },
+    "items": [
+      {
+        "name": "Luvas de proteção",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Permitem tocar superfícies ásperas ou contaminadas com segurança limitada.",
+          "page": 80,
+          "notes": "Não fornecem imunidade a efeitos. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Espelho compacto",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Permite examinar um reflexo ou ponto cego.",
+          "page": 0,
+          "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Apito de segurança",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Produz sinal agudo para reunir uma equipe.",
+          "page": 0,
+          "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Cecília Moura",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-23",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Cecília Moura",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Cecília Moura, professora substituta. Aceitou dar aulas num internato que reabrirá para uma turma piloto. Encontra cartas escondidas sob carteiras e decide devolvê-las aos autores, embora nenhum nome exista no registro escolar. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Internato\nSEGREDO (para a Diretora): Seu sobrenome aparece em uma lista de matrícula apagada\nMOTIVAÇÃO: Proteger os alunos",
+      "archetype": "inocente",
+      "initiative": 5,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "professora substituta, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Carimbo de borboleta",
+      "bond": "Conseguir aprovação da escola",
+      "darkDesire": "Proteger os alunos"
+    },
+    "items": [
+      {
+        "name": "Livro de ocorrências",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "Notas apagadas ligam uma turma a um fechamento antigo.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Internato",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Chave de arquivo",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Abre armários compatíveis quando obtida legitimamente na ficção.",
+          "page": 80,
+          "notes": "Não funciona em toda fechadura. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Lanterna de bolso",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Oferece luz móvel em corredores e passagens estreitas.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "Bia Duarte",
+    "type": "sobrevivente",
+    "img": "systems/brutal-rpg/assets/survivor.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "sobrevivente-24",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "Bia Duarte",
+      "actorLink": true,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/survivor.svg"
+      }
+    },
+    "system": {
+      "bio": "Bia Duarte, influenciadora de viagens. Foi convidada a avaliar uma pousada na ilha, mas sua publicação de chegada mostra o farol aceso mesmo quando ele estava apagado. O patrocinador exige que ela não apague as imagens. Em uma história de BRUTAL, não é um herói invulnerável: precisa tomar decisões sob pressão, preservar vínculos e descobrir quando fugir. O que sabe pode ser mais valioso do que aquilo que carrega.",
+      "notes": "CENÁRIO SUGERIDO: Farol\nSEGREDO (para a Diretora): O contrato foi assinado por alguém da ilha anos antes\nMOTIVAÇÃO: Descobrir quem financia a visita",
+      "archetype": "esbelta",
+      "initiative": 4,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 6
+      },
+      "tension": 0,
+      "looks": "influenciadora de viagens, com vestuário e marcas pessoais apropriados ao cenário.",
+      "iconic": "Óculos cor-de-rosa",
+      "bond": "Cuidar da mãe",
+      "darkDesire": "Descobrir quem financia a visita"
+    },
+    "items": [
+      {
+        "name": "Câmera instantânea",
+        "type": "recurso",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Registra imagens sem conexão com a internet.",
+          "page": 80,
+          "notes": "O número de poses é limitado. Um Recurso por Sobrevivente; 3 usos.",
+          "scene": "",
+          "uses": {
+            "value": 3,
+            "max": 3
+          }
+        }
+      },
+      {
+        "name": "Lanterna de sinalização",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Emite sinais visíveis à distância.",
+          "page": 80,
+          "notes": "Objeto de cenário, não é Recurso ativo até a Diretora autorizar.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Diário de bordo",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "A rota oficial foi corrigida após o desaparecimento da embarcação.",
+          "page": 81,
+          "notes": "Objeto narrativo. Pistas jogáveis são conquistadas durante Suspenses/Encontros.",
+          "scene": "Farol",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  }
+]

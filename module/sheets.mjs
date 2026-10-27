@@ -15,7 +15,7 @@ const updates=async function(event,form,formData){
 };
 export class BrutalActorSheet extends HandlebarsApplicationMixin(ActorSheetV2){
  static DEFAULT_OPTIONS={
-   classes:["brutal-sheet","brutal-actor"],tag:"form",position:{width:850,height:800},
+   classes:["brutal-sheet","brutal-actor"],tag:"form",position:{width:850,height:800,minWidth:320,minHeight:420},
    window:{resizable:true,icon:"fa-solid fa-clapperboard"},
    form:{handler:updates,submitOnChange:true,closeOnSubmit:false}
  };
@@ -38,7 +38,7 @@ export class BrutalActorSheet extends HandlebarsApplicationMixin(ActorSheetV2){
      otherActors:game.actors.filter(a=>a.type==="sobrevivente"&&!a.system.dead&&a.id!==actor.id),
      targets:game.actors.filter(a=>a.type==="sobrevivente"&&!a.system.dead),
      abilities:entries.filter(i=>i.type==="habilidade"),advantages:entries.filter(i=>i.type==="vantagem"),
-     equipment:entries.filter(i=>["recurso","pista"].includes(i.type)),actions:entries.filter(i=>["acao","apavoro","ameaca"].includes(i.type)),
+     equipment:entries.filter(i=>["recurso","pista","equipamento"].includes(i.type)),actions:entries.filter(i=>["acao","apavoro","ameaca"].includes(i.type)),
      conditions:CONDITIONS.map(key=>({key,label:titleCase(key),value:system.conditions[key]}))
    };
  }
@@ -63,6 +63,15 @@ export class BrutalActorSheet extends HandlebarsApplicationMixin(ActorSheetV2){
    const resourceId=get("[data-field='rollResource']")?.value||"";
    const complex=get("[data-field='rollComplex']")?.checked||false;
    const targetId=get("[data-field='targetId']")?.value||"";
+   if(action==="change-portrait"){
+     const Picker=foundry.applications.apps.FilePicker;
+     const picker=new Picker({type:"image",current:actor.img,callback:async image=>{
+       if(!image)return;
+       await actor.update({img:image,"prototypeToken.texture.src":image});
+     }});
+     return picker.render(true);
+   }
+   if(action==="install-compendiums")return game.brutal.installCompendiums();
    if(action==="apply-advantages"){
      if(actor.type!=="sobrevivente")return;
      const available=[...GENERAL_ADVANTAGES,...STYLE_ADVANTAGES.filter(v=>ARCHETYPES[actor.system.archetype]?.styles.includes(v.style))];
@@ -108,7 +117,7 @@ export class BrutalActorSheet extends HandlebarsApplicationMixin(ActorSheetV2){
    }
    if(action==="item-create"){
      const type=button.dataset.type;
-     if(!["habilidade","vantagem","recurso","pista","acao","apavoro","ameaca","condicao"].includes(type))return;
+     if(!["habilidade","vantagem","recurso","pista","acao","apavoro","ameaca","condicao","equipamento"].includes(type))return;
      const newItem=await Item.create({name:"Novo "+type,type,system:{uses:{value:3,max:3}}},{parent:actor});
      return newItem.sheet.render(true);
    }

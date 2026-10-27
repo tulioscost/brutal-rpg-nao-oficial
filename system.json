@@ -2,8 +2,8 @@
   "id": "brutal-rpg",
   "type": "system",
   "title": "BRUTAL RPG — Sistema Comunitário",
-  "description": "Adaptação técnica independente de BRUTAL RPG 0.3 para Foundry VTT, sem reprodução do livro. Requer o manual original para consulta das habilidades e condições específicas.",
-  "version": "0.1.0",
+  "description": "Adaptação não oficial de BRUTAL RPG 0.3: fichas responsivas, retratos editáveis e compêndios originais de Assassinos, Sobreviventes e Itens; requer manual para regras.",
+  "version": "0.2.0",
   "compatibility": {
     "minimum": "14",
     "verified": "14",
@@ -40,7 +40,8 @@
       "ameaca": {},
       "acao": {},
       "apavoro": {},
-      "condicao": {}
+      "condicao": {},
+      "equipamento": {}
     }
   },
   "grid": {
@@ -54,6 +55,6 @@
   "background": "assets/background.svg",
   "url": "https://github.com/tulioscost/brutal-rpg-nao-oficial",
   "manifest": "https://raw.githubusercontent.com/tulioscost/brutal-rpg-nao-oficial/main/system.json",
-  "download": "https://github.com/tulioscost/brutal-rpg-nao-oficial/releases/download/v0.1.0/brutal-rpg-v0.1.0.zip",
+  "download": "https://github.com/tulioscost/brutal-rpg-nao-oficial/releases/download/v0.2.0/brutal-rpg-v0.2.0.zip",
   "readme": "https://github.com/tulioscost/brutal-rpg-nao-oficial/blob/main/README.md"
 }

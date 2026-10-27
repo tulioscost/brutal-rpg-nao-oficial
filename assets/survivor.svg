@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <defs><radialGradient id="g"><stop stop-color="#30343c"/><stop offset="1" stop-color="#151113"/></radialGradient></defs>
+  <rect width="300" height="400" fill="url(#g)"/>
+  <path d="M0 350Q30 255 105 214H195Q275 250 300 350V400H0Z" fill="#31303a"/>
+  <ellipse cx="150" cy="128" rx="71" ry="86" fill="#5a5156"/>
+  <path d="M75 118Q74 24 155 29Q228 25 229 120Q190 67 150 73Q108 68 75 118Z" fill="#262228"/>
+  <path d="M117 133H134 M166 133H183" stroke="#161518" stroke-width="6" stroke-linecap="round"/>
+  <path d="M132 174Q150 180 169 174" fill="none" stroke="#2d272a" stroke-width="4"/>
+  <text x="150" y="377" fill="#f3e7e7" text-anchor="middle" font-size="17" font-family="sans-serif" letter-spacing="3">SOBREVIVENTE</text>
+</svg>

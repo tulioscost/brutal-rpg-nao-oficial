@@ -1,0 +1,1722 @@
+[
+  {
+    "name": "O Operador do Último Trem",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-01",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "O Operador do Último Trem",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "O Operador do Último Trem — ex-condutor que assombra estação desativada. Foi responsabilizado por um descarrilamento que a companhia encobriu. Anos depois, passageiros recebem bilhetes de uma linha que não consta em mapa algum; as portas só se abrem para quem confessar por que embarcou. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: estação desativada\nSINAL CARACTERÍSTICO: Apita três vezes antes de surgir entre os vagões.\nPISTA DE INVESTIGAÇÃO: Escala de turnos carimbada com o nome de uma vítima antes de seu nascimento.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "estrategico",
+      "secondary": "perseguidor",
+      "initiative": 9,
+      "pool": {
+        "value": 3,
+        "max": 3
+      },
+      "escape": {
+        "value": 0,
+        "max": 3
+      },
+      "horror": 1,
+      "freeScares": 4,
+      "stigma": "Apita três vezes antes de surgir entre os vagões. Seu comportamento espelha a antiga profissão de ex-condutor.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em estação desativada.",
+      "secret": "O trem nunca existiu naquela noite: os relatos foram fabricados para apagar uma greve."
+    },
+    "items": [
+      {
+        "name": "Lanterna ferroviária",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Objeto ligado à história de O Operador do Último Trem; peça recorrente no cenário estação desativada.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Bilhete perfurado",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "A sequência de furos indica uma plataforma fora do mapa público.",
+          "page": 81,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "Estação",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Chave de manutenção",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Objeto ligado à história de O Operador do Último Trem; peça recorrente no cenário estação desativada.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "A Costureira das Fitas",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-02",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "A Costureira das Fitas",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "A Costureira das Fitas — figurinista desaparecida que assombra teatro municipal. Uma figurinista que sustentava o teatro com consertos noturnos passou a ouvir vozes nos camarins vazios. Após o incêndio do depósito, vestidos começaram a aparecer em corpos de manequins com as medidas de moradores desaparecidos. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: teatro municipal\nSINAL CARACTERÍSTICO: Deixa uma fita vermelha presa à maçaneta.\nPISTA DE INVESTIGAÇÃO: Livro de medidas com duas caligrafias e datas incompatíveis.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "desconhecido",
+      "secondary": "mestre",
+      "initiative": 9,
+      "pool": {
+        "value": 2,
+        "max": 2
+      },
+      "escape": {
+        "value": 0,
+        "max": 2
+      },
+      "horror": 1,
+      "freeScares": 5,
+      "stigma": "Deixa uma fita vermelha presa à maçaneta. Seu comportamento espelha a antiga profissão de figurinista desaparecida.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em teatro municipal.",
+      "secret": "Ela não é a mulher desaparecida, mas alguém que usou seu nome para tomar o lugar no elenco."
+    },
+    "items": [
+      {
+        "name": "Tesoura de alfaiate",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Ferramenta de corte pertencente ao ateliê.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Fita métrica vermelha",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "Marcas de tinta ligam duas figuras aos figurinos antigos.",
+          "page": 81,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "Teatro",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Máscara de ensaio",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Adereço de teatro usado para ocultar o rosto.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "O Vigia do Reservatório",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-03",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "O Vigia do Reservatório",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "O Vigia do Reservatório — ex-fiscal de água que assombra represa e túnel de drenagem. Sua última inspeção terminou com o fechamento de uma comporta enquanto moradores ainda procuravam um adolescente. Desde então uma figura encapuzada ronda as galerias quando a sirene da barragem deixa de funcionar. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: represa e túnel de drenagem\nSINAL CARACTERÍSTICO: Bate uma haste nos canos para escutar quem se esconde.\nPISTA DE INVESTIGAÇÃO: Caderno impermeável com sequência de válvulas e horários.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "obstinado",
+      "secondary": "brutamontes",
+      "initiative": 9,
+      "pool": {
+        "value": 5,
+        "max": 5
+      },
+      "escape": {
+        "value": 0,
+        "max": 4
+      },
+      "horror": 2,
+      "freeScares": 2,
+      "stigma": "Bate uma haste nos canos para escutar quem se esconde. Seu comportamento espelha a antiga profissão de ex-fiscal de água.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em represa e túnel de drenagem.",
+      "secret": "O registro da comporta prova que ele tentou impedir o fechamento e foi trancado pelo superior."
+    },
+    "items": [
+      {
+        "name": "Haste de sondagem",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Ferramenta longa de manutenção.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Cadeado de comporta",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Objeto de controle de manutenção.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Caderno impermeável",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "O registro das válvulas mostra a ordem real de fechamento.",
+          "page": 81,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "Reservatório",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "A Matriarca do Pavilhão",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-04",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "A Matriarca do Pavilhão",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "A Matriarca do Pavilhão — ex-diretora escolar que assombra internato abandonado. Impunha um código de silêncio às alunas e apagava os nomes de quem questionasse suas regras. O internato fechou depois da fuga de uma turma inteira; décadas mais tarde, a campainha volta a tocar dentro das salas lacradas. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: internato abandonado\nSINAL CARACTERÍSTICO: Apaga as luzes na ordem inversa da chamada.\nPISTA DE INVESTIGAÇÃO: Livro de ocorrências com páginas reordenadas.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "mestre",
+      "secondary": "estrategico",
+      "initiative": 9,
+      "pool": {
+        "value": 2,
+        "max": 2
+      },
+      "escape": {
+        "value": 0,
+        "max": 2
+      },
+      "horror": 1,
+      "freeScares": 5,
+      "stigma": "Apaga as luzes na ordem inversa da chamada. Seu comportamento espelha a antiga profissão de ex-diretora escolar.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em internato abandonado.",
+      "secret": "Os nomes riscados eram uma tentativa de proteger as meninas de um perseguidor externo."
+    },
+    "items": [
+      {
+        "name": "Régua de madeira",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Material escolar conservado desde o internato.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Livro de ocorrências",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "Notas apagadas ligam uma turma a um fechamento antigo.",
+          "page": 81,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "Internato",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Sino escolar",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Peça que sinaliza intervalos e horários.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "O Boticário de Vidro",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-05",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "O Boticário de Vidro",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "O Boticário de Vidro — colecionador de frascos que assombra farmácia histórica. O farmacêutico adorava ouvir pacientes contando sonhos e registrava cada pesadelo como se fosse uma receita. A reforma da farmácia revelou um depósito de frascos etiquetados com nomes de pessoas ainda vivas. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: farmácia histórica\nSINAL CARACTERÍSTICO: Faz tilintar vidro no escuro antes de qualquer aparição.\nPISTA DE INVESTIGAÇÃO: Receituário com assinaturas idênticas em épocas diferentes.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "inato",
+      "secondary": "carniceiro",
+      "initiative": 9,
+      "pool": {
+        "value": 5,
+        "max": 5
+      },
+      "escape": {
+        "value": 0,
+        "max": 4
+      },
+      "horror": 2,
+      "freeScares": 2,
+      "stigma": "Faz tilintar vidro no escuro antes de qualquer aparição. Seu comportamento espelha a antiga profissão de colecionador de frascos.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em farmácia histórica.",
+      "secret": "Suas anotações foram produzidas por pacientes em um experimento coletivo de sugestão."
+    },
+    "items": [
+      {
+        "name": "Estojo de frascos",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Pequenos recipientes vazios de laboratório.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Receituário antigo",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Papel de receitas com datas de décadas passadas.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Ampulheta quebrada",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Objeto decorativo de significado incerto.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "A Noiva do Farol",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-06",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "A Noiva do Farol",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "A Noiva do Farol — faroleira desaparecida que assombra ilha rochosa. Numa noite de tempestade, o farol apagou e uma embarcação encalhou na costa. Desde então o feixe da luz gira ao contrário quando visitantes mentem sobre o que vieram buscar. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: ilha rochosa\nSINAL CARACTERÍSTICO: Arrasta pela escada uma corrente enferrujada.\nPISTA DE INVESTIGAÇÃO: Diário de bordo sobre uma travessia omitida dos jornais.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "assombracao",
+      "secondary": "perseguidor",
+      "initiative": 9,
+      "pool": {
+        "value": 4,
+        "max": 4
+      },
+      "escape": {
+        "value": 0,
+        "max": 3
+      },
+      "horror": 2,
+      "freeScares": 3,
+      "stigma": "Arrasta pela escada uma corrente enferrujada. Seu comportamento espelha a antiga profissão de faroleira desaparecida.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em ilha rochosa.",
+      "secret": "A lanterna foi desligada para impedir que contrabandistas localizassem refugiados."
+    },
+    "items": [
+      {
+        "name": "Corrente de ancoragem",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Ferro marítimo pesado, de difícil transporte.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Lanterna de sinalização",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Emite sinais visíveis à distância.",
+          "page": 80,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Diário de bordo",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "A rota oficial foi corrigida após o desaparecimento da embarcação.",
+          "page": 81,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "Farol",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "O Homem dos Cartazes",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-07",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "O Homem dos Cartazes",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "O Homem dos Cartazes — ex-projecionista que assombra cinema de rua. Um projetista foi demitido quando a última sessão terminou em pânico e o bairro passou a acusá-lo de manipular imagens. Na reabertura clandestina da sala, cartazes exibem rostos do público onde antes havia atores. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: cinema de rua\nSINAL CARACTERÍSTICO: Aparece sempre que os créditos estão prestes a subir.\nPISTA DE INVESTIGAÇÃO: Rolo de filme com cena gravada fora de ordem.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "desconhecido",
+      "secondary": "estrategico",
+      "initiative": 9,
+      "pool": {
+        "value": 2,
+        "max": 2
+      },
+      "escape": {
+        "value": 0,
+        "max": 2
+      },
+      "horror": 1,
+      "freeScares": 5,
+      "stigma": "Aparece sempre que os créditos estão prestes a subir. Seu comportamento espelha a antiga profissão de ex-projecionista.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em cinema de rua.",
+      "secret": "A projeção revela uma fita de segurança adulterada pela empresa de vigilância."
+    },
+    "items": [
+      {
+        "name": "Rolo de película",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "O último fotograma mostra uma pessoa saindo pela cabine de projeção.",
+          "page": 81,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "Cinema",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Estilete de montagem",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Ferramenta para cortar película.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Chave da cabine",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Objeto ligado à história de O Homem dos Cartazes; peça recorrente no cenário cinema de rua.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "A Caçadora da Geada",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-08",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "A Caçadora da Geada",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "A Caçadora da Geada — guia de montanha que assombra hotel no alto da serra. A única guia que conhecia trilhas de resgate perdeu a licença depois de um acidente coletivo. Quando a nevasca fecha a estrada, sinais de botas idênticas aparecem diante de quartos que ninguém ocupou. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: hotel no alto da serra\nSINAL CARACTERÍSTICO: Marca as janelas com um círculo feito de gelo.\nPISTA DE INVESTIGAÇÃO: Mapa de emergência assinado pelo gerente do hotel.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "obstinado",
+      "secondary": "perseguidor",
+      "initiative": 9,
+      "pool": {
+        "value": 4,
+        "max": 4
+      },
+      "escape": {
+        "value": 0,
+        "max": 3
+      },
+      "horror": 2,
+      "freeScares": 3,
+      "stigma": "Marca as janelas com um círculo feito de gelo. Seu comportamento espelha a antiga profissão de guia de montanha.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em hotel no alto da serra.",
+      "secret": "O acidente foi provocado por um alerta meteorológico suprimido para evitar cancelamentos."
+    },
+    "items": [
+      {
+        "name": "Piolet de escalada",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Ferramenta de montanha especializada.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Apito de resgate",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Produz aviso audível em espaços amplos.",
+          "page": 80,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Mapa plastificado",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Objeto ligado à história de A Caçadora da Geada; peça recorrente no cenário hotel no alto da serra.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "O Técnico da Frequência",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-09",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "O Técnico da Frequência",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "O Técnico da Frequência — radialista noturno que assombra torre de retransmissão. Um programa de pedidos musicais começou a receber ligações de telefones já desconectados. O técnico que apagou a gravação final da emissora volta a transmitir mensagens direcionadas a hóspedes de uma pousada vizinha. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: torre de retransmissão\nSINAL CARACTERÍSTICO: As vozes chegam pelo rádio antes de seus passos.\nPISTA DE INVESTIGAÇÃO: Fita cassete cuja bobina roda ao contrário.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "maquina",
+      "secondary": "estrategico",
+      "initiative": 9,
+      "pool": {
+        "value": 3,
+        "max": 3
+      },
+      "escape": {
+        "value": 0,
+        "max": 3
+      },
+      "horror": 2,
+      "freeScares": 4,
+      "stigma": "As vozes chegam pelo rádio antes de seus passos. Seu comportamento espelha a antiga profissão de radialista noturno.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em torre de retransmissão.",
+      "secret": "A gravação intercepta conversas privadas da equipe que encobriu um desaparecimento."
+    },
+    "items": [
+      {
+        "name": "Gravador portátil",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Registra sons, pistas e ameaças sem depender de rede.",
+          "page": 80,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Antena telescópica",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Objeto ligado à história de O Técnico da Frequência; peça recorrente no cenário torre de retransmissão.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Fita de áudio",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "O silêncio da gravação contém um pedido de ajuda em baixa frequência.",
+          "page": 81,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "Torre",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "A Senhora das Chaves",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-10",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "A Senhora das Chaves",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "A Senhora das Chaves — zeladora de condomínio que assombra prédio interditado. Durante anos recebeu cartas destinadas a moradores que não figuravam no livro da portaria. Após o desabamento de um andar, as fechaduras se multiplicaram e a antiga zeladora passou a vigiar portas inexistentes. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: prédio interditado\nSINAL CARACTERÍSTICO: Devolve sempre as chaves à pessoa errada.\nPISTA DE INVESTIGAÇÃO: Chave numerada para um andar que não aparece no elevador.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "mestre",
+      "secondary": "obstinado",
+      "initiative": 9,
+      "pool": {
+        "value": 3,
+        "max": 3
+      },
+      "escape": {
+        "value": 0,
+        "max": 3
+      },
+      "horror": 1,
+      "freeScares": 4,
+      "stigma": "Devolve sempre as chaves à pessoa errada. Seu comportamento espelha a antiga profissão de zeladora de condomínio.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em prédio interditado.",
+      "secret": "A planta oficial foi adulterada para esconder um apartamento clandestino."
+    },
+    "items": [
+      {
+        "name": "Molho de chaves",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Chaves sem etiquetas confiáveis.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Prancheta da portaria",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Contém anotações de turno.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Lanterna de emergência",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Ilumina áreas sem energia e ajuda a localizar inscrições no escuro.",
+          "page": 80,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "O Jardineiro das Cinzas",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-11",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "O Jardineiro das Cinzas",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "O Jardineiro das Cinzas — paisagista municipal que assombra jardim botânico fechado. O zelador manteve estufas funcionando mesmo quando o parque ficou sem orçamento. Depois que uma coleção rara sumiu, ele começou a reconstruir canteiros com objetos pessoais de visitantes. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: jardim botânico fechado\nSINAL CARACTERÍSTICO: Ouve-se sua pá tocar pedra antes que os caminhos mudem.\nPISTA DE INVESTIGAÇÃO: Livro de entrada das espécies com valores de leilão.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "monstruosidade",
+      "secondary": "inato",
+      "initiative": 9,
+      "pool": {
+        "value": 5,
+        "max": 5
+      },
+      "escape": {
+        "value": 0,
+        "max": 4
+      },
+      "horror": 3,
+      "freeScares": 2,
+      "stigma": "Ouve-se sua pá tocar pedra antes que os caminhos mudem. Seu comportamento espelha a antiga profissão de paisagista municipal.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em jardim botânico fechado.",
+      "secret": "As plantas roubadas foram vendidas pela administração, não por ele."
+    },
+    "items": [
+      {
+        "name": "Pá de jardinagem",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Ferramenta comum do jardim botânico.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Caderno botânico",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Objeto ligado à história de O Jardineiro das Cinzas; peça recorrente no cenário jardim botânico fechado.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Tesoura de poda",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Ferramenta de jardinagem com trava.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "A Viúva da Rodovia",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-12",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "A Viúva da Rodovia",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "A Viúva da Rodovia — socorrista voluntária que assombra posto de parada isolado. Depois de atender uma colisão em massa, uma socorrista passou a exigir que viajantes refizessem as últimas decisões tomadas antes da viagem. Seu posto só aparece nos mapas quando a estrada está interditada. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: posto de parada isolado\nSINAL CARACTERÍSTICO: Oferece água antes de perguntar o destino.\nPISTA DE INVESTIGAÇÃO: Cracha de socorro;Cones refletivos;Ficha de atendimento.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "amaldicoado",
+      "secondary": "assombracao",
+      "initiative": 9,
+      "pool": {
+        "value": 4,
+        "max": 4
+      },
+      "escape": {
+        "value": 0,
+        "max": 3
+      },
+      "horror": 2,
+      "freeScares": 3,
+      "stigma": "Oferece água antes de perguntar o destino. Seu comportamento espelha a antiga profissão de socorrista voluntária.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em posto de parada isolado.",
+      "secret": "Ela procura o verdadeiro responsável pela falha nos freios de um ônibus, não vingança aleatória."
+    },
+    "items": [
+      {
+        "name": "Colete refletivo",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Roupa de alta visibilidade rodoviária.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Maleta de primeiros socorros",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Torna possível prestar cuidados narrativamente pertinentes.",
+          "page": 80,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Ficha de atendimento",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "A assinatura aponta para alguém que esteve no posto antes da colisão.",
+          "page": 81,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "Rodovia",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "O Zelador do Aquário",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-13",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "O Zelador do Aquário",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "O Zelador do Aquário — biólogo demitido que assombra oceanário vazio. Um cuidador proibiu a retirada de animais durante uma reforma e desapareceu nos túneis de filtragem. Nas visitas noturnas, os vidros exibem reflexos de pessoas que não estão no recinto. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: oceanário vazio\nSINAL CARACTERÍSTICO: Bate no vidro do lado de dentro.\nPISTA DE INVESTIGAÇÃO: Cartão de acesso molhado e uma senha incompleta.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "inato",
+      "secondary": "descontrolado",
+      "initiative": 9,
+      "pool": {
+        "value": 5,
+        "max": 5
+      },
+      "escape": {
+        "value": 0,
+        "max": 4
+      },
+      "horror": 2,
+      "freeScares": 2,
+      "stigma": "Bate no vidro do lado de dentro. Seu comportamento espelha a antiga profissão de biólogo demitido.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em oceanário vazio.",
+      "secret": "As gravações provam que a suposta fuga foi organizada para ocultar descarte irregular."
+    },
+    "items": [
+      {
+        "name": "Arpão de manutenção",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Objeto ligado à história de O Zelador do Aquário; peça recorrente no cenário oceanário vazio.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Cartão magnético",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "Abre um acesso secundário da área técnica, se o leitor ainda funciona.",
+          "page": 81,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "Aquário",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Roupa de mergulho",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Ajuda a suportar água fria em determinada cena.",
+          "page": 80,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "A Médica do Quarto Treze",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-14",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "A Médica do Quarto Treze",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "A Médica do Quarto Treze — plantonista afastada que assombra hospital de campanha. Numa noite de apagão, a médica perdeu a lista de pacientes e foi acusada de trocar identidades. Seu uniforme reaparece sempre que uma pessoa tenta sair do prédio antes da alta. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: hospital de campanha\nSINAL CARACTERÍSTICO: Recita nomes completos que ninguém lhe contou.\nPISTA DE INVESTIGAÇÃO: Pulseira de identificação com três códigos.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "carniceiro",
+      "secondary": "estrategico",
+      "initiative": 9,
+      "pool": {
+        "value": 4,
+        "max": 4
+      },
+      "escape": {
+        "value": 0,
+        "max": 4
+      },
+      "horror": 3,
+      "freeScares": 3,
+      "stigma": "Recita nomes completos que ninguém lhe contou. Seu comportamento espelha a antiga profissão de plantonista afastada.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em hospital de campanha.",
+      "secret": "Os documentos foram falsificados por uma empresa contratada para reduzir custos."
+    },
+    "items": [
+      {
+        "name": "Prontuário lacrado",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "O número do leito contradiz o mapa da ala hospitalar.",
+          "page": 81,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "Hospital",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Lanterna clínica",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Auxilia exames e leitura de documentos em pouca luz.",
+          "page": 80,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Pulseira hospitalar",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "O código identifica um paciente internado sob nome falso.",
+          "page": 81,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "Hospital",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "O Pastor da Antena",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-15",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "O Pastor da Antena",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "O Pastor da Antena — líder comunitário que assombra acampamento de peregrinação. Atraía gente para vigílias sob uma velha antena, prometendo que as luzes do céu responderiam perguntas. Quando a transmissão parou, seus seguidores ouviram a própria voz pedir socorro. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: acampamento de peregrinação\nSINAL CARACTERÍSTICO: Repete o último pedido de cada pessoa.\nPISTA DE INVESTIGAÇÃO: Caderno de hinos com anotações técnicas ocultas.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "amaldicoado",
+      "secondary": "mestre",
+      "initiative": 9,
+      "pool": {
+        "value": 3,
+        "max": 3
+      },
+      "escape": {
+        "value": 0,
+        "max": 3
+      },
+      "horror": 2,
+      "freeScares": 4,
+      "stigma": "Repete o último pedido de cada pessoa. Seu comportamento espelha a antiga profissão de líder comunitário.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em acampamento de peregrinação.",
+      "secret": "A frequência está ligada a um sistema de aviso experimental abandonado."
+    },
+    "items": [
+      {
+        "name": "Sino de mão",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Objeto ligado à história de O Pastor da Antena; peça recorrente no cenário acampamento de peregrinação.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Caderno de hinos",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Músicas e anotações pessoais.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Rádio de ondas curtas",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Capta comunicação fora da cobertura de celulares.",
+          "page": 80,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "A Mímico da Praça",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-16",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "A Mímico da Praça",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "A Mímico da Praça — artista de rua que assombra feira noturna. Uma performer desapareceu na noite em que a feira perdeu suas licenças. Sua versão mascarada passou a repetir os gestos de visitantes e a bloquear saídas que deveriam estar abertas. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: feira noturna\nSINAL CARACTERÍSTICO: Só move o corpo quando alguém pisca.\nPISTA DE INVESTIGAÇÃO: Cartaz de espetáculo com assinaturas duplicadas.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "descontrolado",
+      "secondary": "perseguidor",
+      "initiative": 9,
+      "pool": {
+        "value": 5,
+        "max": 5
+      },
+      "escape": {
+        "value": 0,
+        "max": 4
+      },
+      "horror": 3,
+      "freeScares": 2,
+      "stigma": "Só move o corpo quando alguém pisca. Seu comportamento espelha a antiga profissão de artista de rua.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em feira noturna.",
+      "secret": "Há duas artistas; uma delas foi testemunha do caso e assumiu o papel para encontrar a irmã."
+    },
+    "items": [
+      {
+        "name": "Máscara de porcelana",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Adereço de espetáculo.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Luvas brancas",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Peça do figurino de uma artista de rua.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Espelho compacto",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Permite examinar um reflexo ou ponto cego.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "O Cobrador de Pedágio",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-17",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "O Cobrador de Pedágio",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "O Cobrador de Pedágio — funcionário terceirizado que assombra estrada particular. Após a instalação de cancelas automáticas, motoristas relataram cobranças por viagens que não realizaram. Um homem vestido com uniforme antigo guarda recibos e exige que sejam pagos em lembranças. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: estrada particular\nSINAL CARACTERÍSTICO: Estampa cada recibo com uma hora diferente.\nPISTA DE INVESTIGAÇÃO: Caixa registradora com rolo de papel que não termina.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "maquina",
+      "secondary": "obstinado",
+      "initiative": 9,
+      "pool": {
+        "value": 4,
+        "max": 4
+      },
+      "escape": {
+        "value": 0,
+        "max": 3
+      },
+      "horror": 2,
+      "freeScares": 3,
+      "stigma": "Estampa cada recibo com uma hora diferente. Seu comportamento espelha a antiga profissão de funcionário terceirizado.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em estrada particular.",
+      "secret": "O sistema de placas foi usado para perseguir denunciantes de uma fraude empresarial."
+    },
+    "items": [
+      {
+        "name": "Carimbo numérico",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Marca documentos com sequência manual.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Livro de recibos",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "Uma cobrança aparece para um veículo que estava apreendido.",
+          "page": 81,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "Pedágio",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Bastão luminoso",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Sinalizador de trânsito e emergência.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "O Cronista das Marés",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-18",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "O Cronista das Marés",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "O Cronista das Marés — historiador local que assombra vila costeira vazia. Catalogou naufrágios até encontrar uma lista de sobreviventes que contrariava o monumento oficial. Os visitantes da vila passam a ouvir seus próprios nomes durante a leitura pública das vítimas. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: vila costeira vazia\nSINAL CARACTERÍSTICO: Lê nomes no exato instante em que a maré sobe.\nPISTA DE INVESTIGAÇÃO: Mapa de correntes com rota terrestre marcada à mão.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "assombracao",
+      "secondary": "mestre",
+      "initiative": 9,
+      "pool": {
+        "value": 3,
+        "max": 3
+      },
+      "escape": {
+        "value": 0,
+        "max": 3
+      },
+      "horror": 2,
+      "freeScares": 4,
+      "stigma": "Lê nomes no exato instante em que a maré sobe. Seu comportamento espelha a antiga profissão de historiador local.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em vila costeira vazia.",
+      "secret": "O monumento celebra um resgate que nunca ocorreu: a comunidade encobriu os abandonados."
+    },
+    "items": [
+      {
+        "name": "Livro de registros",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Coletânea de nomes e datas da vila.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Bússola marítima",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/recurso.svg",
+        "system": {
+          "description": "Permite orientar-se em áreas sem referências visuais.",
+          "page": 80,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Sino náutico",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Peça retirada de uma antiga embarcação.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "O Palhaço do Retorno",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-19",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "O Palhaço do Retorno",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "O Palhaço do Retorno — animador de festas que assombra parque de diversões fechado. Foi a última pessoa a operar um carrossel antes de uma pane durante a inauguração. Anos depois, convites anônimos prometem que todos terão uma segunda chance de terminar a festa. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: parque de diversões fechado\nSINAL CARACTERÍSTICO: Entrega ingressos numerados a pessoas que já fugiram uma vez.\nPISTA DE INVESTIGAÇÃO: Relação de convidados com numeração repetida.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "monstruosidade",
+      "secondary": "descontrolado",
+      "initiative": 9,
+      "pool": {
+        "value": 6,
+        "max": 6
+      },
+      "escape": {
+        "value": 0,
+        "max": 4
+      },
+      "horror": 3,
+      "freeScares": 1,
+      "stigma": "Entrega ingressos numerados a pessoas que já fugiram uma vez. Seu comportamento espelha a antiga profissão de animador de festas.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em parque de diversões fechado.",
+      "secret": "Não houve pane mecânica: alguém alterou o sinal de emergência."
+    },
+    "items": [
+      {
+        "name": "Buzina de brinquedo",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Objeto cênico estridente.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Ingresso perfurado",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "A numeração identifica dois convites para o mesmo assento.",
+          "page": 81,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "Parque",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Chave do carrossel",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Aciona um painel compatível apenas no cenário.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "A Restauradora dos Retratos",
+    "type": "assassino",
+    "img": "systems/brutal-rpg/assets/killer.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "assassino-20",
+        "original": true,
+        "edition": "0.2.0"
+      }
+    },
+    "prototypeToken": {
+      "name": "A Restauradora dos Retratos",
+      "actorLink": false,
+      "texture": {
+        "src": "systems/brutal-rpg/assets/killer.svg"
+      }
+    },
+    "system": {
+      "bio": "A Restauradora dos Retratos — curadora de museu que assombra mansão transformada em galeria. Uma restauradora recebia quadros anônimos de pessoas que nunca haviam posado. Depois da inauguração de uma sala secreta, visitantes começaram a reconhecer detalhes de seus próprios quartos nas pinturas. Sua presença não precisa resultar em confronto imediato: cada sinal de passagem convida o grupo a investigar, negociar ou fugir. A Diretora pode revelar a cronologia em cenas curtas e permitir que as Sobreviventes descubram contradições antes de expor o perigo.",
+      "notes": "LOCAL: mansão transformada em galeria\nSINAL CARACTERÍSTICO: Vira os quadros para a parede ao ouvir passos.\nPISTA DE INVESTIGAÇÃO: Negativo fotográfico com uma janela escondida.\nGANCHO: aparição inicial indireta; conduza a cena pela tensão, pistas e escolhas.",
+      "primary": "desconhecido",
+      "secondary": "inato",
+      "initiative": 9,
+      "pool": {
+        "value": 3,
+        "max": 3
+      },
+      "escape": {
+        "value": 0,
+        "max": 3
+      },
+      "horror": 1,
+      "freeScares": 4,
+      "stigma": "Vira os quadros para a parede ao ouvir passos. Seu comportamento espelha a antiga profissão de curadora de museu.",
+      "intent": "Fazer as pessoas confrontarem o episódio escondido em mansão transformada em galeria.",
+      "secret": "A curadora não pinta os retratos; tenta apagar indicações deixadas por um fotógrafo clandestino."
+    },
+    "items": [
+      {
+        "name": "Espátula de restauro",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Ferramenta delicada para conservar pinturas.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Álbum de retratos",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/pista.svg",
+        "system": {
+          "description": "A ordem das fotografias produz uma mensagem codificada.",
+          "page": 81,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "Galeria",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      },
+      {
+        "name": "Chave da moldura",
+        "type": "equipamento",
+        "img": "systems/brutal-rpg/assets/equipamento.svg",
+        "system": {
+          "description": "Objeto ligado à história de A Restauradora dos Retratos; peça recorrente no cenário mansão transformada em galeria.",
+          "page": 0,
+          "notes": "Acessório do Assassino: uso e efeito definidos narrativamente pela Diretora.",
+          "scene": "",
+          "uses": {
+            "value": 0,
+            "max": 0
+          }
+        }
+      }
+    ]
+  }
+]

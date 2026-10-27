@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <defs><radialGradient id="g"><stop stop-color="#670b25"/><stop offset="1" stop-color="#130e12"/></radialGradient></defs>
+  <rect width="300" height="400" fill="url(#g)"/>
+  <path d="M0 350 Q35 230 120 208 Q150 218 180 208 Q260 230 300 350V400H0Z" fill="#07080a"/>
+  <ellipse cx="150" cy="134" rx="76" ry="92" fill="#151417" stroke="#9c2945" stroke-width="4"/>
+  <path d="M112 142L140 153 M160 153L188 142" stroke="#dd1f49" stroke-width="8" stroke-linecap="round"/>
+  <path d="M120 199H180" stroke="#7a1735" stroke-width="4"/>
+  <text x="150" y="377" fill="#d5c9cb" text-anchor="middle" font-size="17" font-family="sans-serif" letter-spacing="4">ARQUIVO DE CAÇA</text>
+</svg>

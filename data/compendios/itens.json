@@ -1,0 +1,2378 @@
+[
+  {
+    "name": "Lanterna de emergência",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-lanterna-de-emergencia",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Ilumina áreas sem energia e ajuda a localizar inscrições no escuro.",
+      "page": 80,
+      "notes": "A bateria fica instável sob chuva. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Lanterna de bolso",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-lanterna-de-bolso",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Oferece luz móvel em corredores e passagens estreitas.",
+      "page": 80,
+      "notes": "O feixe é visível à distância. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Corda de salvamento",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-corda-de-salvamento",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Auxilia travessias e resgates em locais perigosos.",
+      "page": 80,
+      "notes": "Precisa de ponto seguro de ancoragem. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Bússola marítima",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-bussola-maritima",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Permite orientar-se em áreas sem referências visuais.",
+      "page": 80,
+      "notes": "Sua agulha pode revelar anomalias narrativas. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Gravador portátil",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-gravador-portatil",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Registra sons, pistas e ameaças sem depender de rede.",
+      "page": 80,
+      "notes": "A gravação pode conter ruído. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Pilhas sobressalentes",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-pilhas-sobressalentes",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Mantêm equipamentos simples em funcionamento.",
+      "page": 80,
+      "notes": "É necessário aparelho compatível. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Planta arquitetônica",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-planta-arquitetonica",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Revela saídas previstas e espaços ocultos de edifícios.",
+      "page": 80,
+      "notes": "Reformas podem ter alterado o plano. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Multímetro",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-multimetro",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Auxilia na verificação de circuitos e painéis.",
+      "page": 80,
+      "notes": "Não substitui ferramentas especializadas. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Filmadora portátil",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-filmadora-portatil",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Permite examinar detalhes que passaram despercebidos.",
+      "page": 80,
+      "notes": "A bateria e a memória são limitadas. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Lanterna de sinalização",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-lanterna-de-sinalizacao",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Emite sinais visíveis à distância.",
+      "page": 80,
+      "notes": "Pode denunciar a posição do grupo. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Apito de resgate",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-apito-de-resgate",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Produz aviso audível em espaços amplos.",
+      "page": 80,
+      "notes": "O som também atrai atenção. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Mapa botânico",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-mapa-botanico",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Ajuda a localizar trilhas de serviço em áreas verdes.",
+      "page": 80,
+      "notes": "O mapa é antigo. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Rádio de ondas curtas",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-radio-de-ondas-curtas",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Capta comunicação fora da cobertura de celulares.",
+      "page": 80,
+      "notes": "Sujeito a interferência e chiados. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Colete salva-vidas",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-colete-salva-vidas",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Ajuda uma pessoa em travessias aquáticas.",
+      "page": 80,
+      "notes": "Não elimina riscos do ambiente. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Jogo de ferramentas",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-jogo-de-ferramentas",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Permite intervenções simples em estruturas e mecanismos.",
+      "page": 80,
+      "notes": "É volumoso e incompleto. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Maleta de primeiros socorros",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-maleta-de-primeiros-socorros",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Torna possível prestar cuidados narrativamente pertinentes.",
+      "page": 80,
+      "notes": "O tratamento segue as regras de ferimentos do manual. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Lupa de inspeção",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-lupa-de-inspecao",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Ajuda a examinar detalhes de documentos e superfícies.",
+      "page": 80,
+      "notes": "Exige tempo e iluminação. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Câmera instantânea",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-camera-instantanea",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Registra imagens sem conexão com a internet.",
+      "page": 80,
+      "notes": "O número de poses é limitado. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Mapa rodoviário",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-mapa-rodoviario",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Oferece alternativa aos aplicativos de navegação.",
+      "page": 80,
+      "notes": "Não reflete bloqueios recentes. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Caderno de campo",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-caderno-de-campo",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Organiza descobertas e desenhos de localização.",
+      "page": 80,
+      "notes": "Anotações podem ser perdidas. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Chave de arquivo",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-chave-de-arquivo",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Abre armários compatíveis quando obtida legitimamente na ficção.",
+      "page": 80,
+      "notes": "Não funciona em toda fechadura. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Roupa de mergulho",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-roupa-de-mergulho",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Ajuda a suportar água fria em determinada cena.",
+      "page": 80,
+      "notes": "Não fornece oxigênio. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Rádio portátil",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-radio-portatil",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Mantém contato a curta distância, se houver sinal.",
+      "page": 80,
+      "notes": "Canal pode ser interceptado. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Canivete pequeno",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-canivete-pequeno",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Serve para reparos e soluções improvisadas.",
+      "page": 80,
+      "notes": "Não concede dano mecânico adicional. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Lanterna clínica",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-lanterna-clinica",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Auxilia exames e leitura de documentos em pouca luz.",
+      "page": 80,
+      "notes": "Foco estreito. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Luvas de proteção",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-luvas-de-protecao",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Permitem tocar superfícies ásperas ou contaminadas com segurança limitada.",
+      "page": 80,
+      "notes": "Não fornecem imunidade a efeitos. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Pendrive criptografado",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-pendrive-criptografado",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Permite transportar provas digitais para análise.",
+      "page": 80,
+      "notes": "O conteúdo requer acesso adequado. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Câmera térmica",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-camera-termica",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Permite observar fontes de calor em ambientes difíceis.",
+      "page": 80,
+      "notes": "Não identifica intenções ou seres sobrenaturais. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Fita adesiva reforçada",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-fita-adesiva-reforcada",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Serve a reparos improvisados e marcação de caminhos.",
+      "page": 80,
+      "notes": "Adesão limitada em superfícies molhadas. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Kit de costura",
+    "type": "recurso",
+    "img": "systems/brutal-rpg/assets/recurso.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-kit-de-costura",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Permite reparos temporários de vestimentas e acessórios.",
+      "page": 80,
+      "notes": "Não substitui tratamento de ferimentos. Um Recurso por Sobrevivente; 3 usos.",
+      "scene": "",
+      "uses": {
+        "value": 3,
+        "max": 3
+      }
+    }
+  },
+  {
+    "name": "Bilhete perfurado",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-bilhete-perfurado",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "A sequência de furos indica uma plataforma fora do mapa público.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Estação",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Rolo de película",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-rolo-de-pelicula",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "O último fotograma mostra uma pessoa saindo pela cabine de projeção.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Cinema",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Fita de áudio",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-fita-de-audio",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "O silêncio da gravação contém um pedido de ajuda em baixa frequência.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Torre",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Prontuário lacrado",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-prontuario-lacrado",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "O número do leito contradiz o mapa da ala hospitalar.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Hospital",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Pulseira hospitalar",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-pulseira-hospitalar",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "O código identifica um paciente internado sob nome falso.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Hospital",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Diário de bordo",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-diario-de-bordo",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "A rota oficial foi corrigida após o desaparecimento da embarcação.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Farol",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Negativo fotográfico",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-negativo-fotografico",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Uma janela reflete um corredor que não aparece nas plantas.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Galeria",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Cartão magnético",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-cartao-magnetico",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Abre um acesso secundário da área técnica, se o leitor ainda funciona.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Aquário",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Livro de ocorrências",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-livro-de-ocorrencias",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Notas apagadas ligam uma turma a um fechamento antigo.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Internato",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Caderno impermeável",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-caderno-impermeavel",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "O registro das válvulas mostra a ordem real de fechamento.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Reservatório",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Fita métrica vermelha",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-fita-metrica-vermelha",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Marcas de tinta ligam duas figuras aos figurinos antigos.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Teatro",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Ingresso perfurado",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-ingresso-perfurado",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "A numeração identifica dois convites para o mesmo assento.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Parque",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Ficha de atendimento",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-ficha-de-atendimento",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "A assinatura aponta para alguém que esteve no posto antes da colisão.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Rodovia",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Livro de recibos",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-livro-de-recibos",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Uma cobrança aparece para um veículo que estava apreendido.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Pedágio",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Mapa de correntes",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-mapa-de-correntes",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Há uma rota de fuga que só funciona na maré baixa.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Vila costeira",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Planta de emergência",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-planta-de-emergencia",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Indica um depósito escondido atrás de uma parede falsa.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Hotel",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Álbum de retratos",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-album-de-retratos",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "A ordem das fotografias produz uma mensagem codificada.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Galeria",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Cópia de gravação",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-copia-de-gravacao",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Um segundo canal de áudio revela a voz do operador oculto.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Torre",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Cartaz de espetáculo",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-cartaz-de-espetaculo",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "O programa lista uma substituta nunca anunciada.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Teatro",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Postal de família",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-postal-de-familia",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "A mensagem no verso registra um endereço suprimido do mapa.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Vila costeira",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Mapa da administração",
+    "type": "pista",
+    "img": "systems/brutal-rpg/assets/pista.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-mapa-da-administracao",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Mostra como alcançar um arquivo lacrado sem cruzar os corredores centrais.",
+      "page": 81,
+      "notes": "Pista compartilhada: 5 usos; a Diretora não pode reduzi-los.",
+      "scene": "Condomínio",
+      "uses": {
+        "value": 5,
+        "max": 5
+      }
+    }
+  },
+  {
+    "name": "Campainha da bicicleta",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-campainha-da-bicicleta",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Lembrança de trabalho e de uma rota conhecida.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Capacete de ciclista",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-capacete-de-ciclista",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Protege a cabeça em cena; efeito mecânico depende da Diretora.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Fone de ouvido remendado",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-fone-de-ouvido-remendado",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Objeto afetivo ligado às gravações de família.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Lapiseira metálica",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-lapiseira-metalica",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Permite marcar plantas e anotar observações.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Chaveiro de claquete",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-chaveiro-de-claquete",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Souvenir de uma equipe de filmagem.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Apito de segurança",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-apito-de-seguranca",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Produz sinal agudo para reunir uma equipe.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Postal antigo",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-postal-antigo",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Lembrança da cidade de origem da família.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Estojo de costura",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-estojo-de-costura",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Contém agulhas, linhas e materiais comuns.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Tesoura de alfaiate",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-tesoura-de-alfaiate",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Ferramenta de corte pertencente ao ateliê.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Canivete de cabo verde",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-canivete-de-cabo-verde",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Lembrança do primeiro trabalho de férias.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Touca azul desgastada",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-touca-azul-desgastada",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Equipamento de natação com valor afetivo.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Bastão luminoso",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-bastao-luminoso",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Sinalizador de trânsito e emergência.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Bloco com capa preta",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-bloco-com-capa-preta",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Caderno de entrevistas e rascunhos.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Filmadora antiga",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-filmadora-antiga",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Peça de coleção com uso narrativo.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Chave inglesa do avô",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-chave-inglesa-do-avo",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Objeto ligado à oficina familiar.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Broche de estrela",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-broche-de-estrela",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Presente recebido na primeira semana de estágio.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Anel de plástico cintilante",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-anel-de-plastico-cintilante",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Adorno usado em apresentação musical.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Piolet de escalada",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-piolet-de-escalada",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Ferramenta de montanha especializada.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Sapatos vermelhos de aula",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-sapatos-vermelhos-de-aula",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Calçado de dança de valor sentimental.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Colar de linha vermelha",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-colar-de-linha-vermelha",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Lembrança da infância e de um antigo ateliê.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Buzina de brinquedo",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-buzina-de-brinquedo",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Objeto cênico estridente.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Livro de registros",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-livro-de-registros",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Coletânea de nomes e datas da vila.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Sino náutico",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-sino-nautico",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Peça retirada de uma antiga embarcação.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Máscara de porcelana",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-mascara-de-porcelana",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Adereço de espetáculo.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Luvas brancas",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-luvas-brancas",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Peça do figurino de uma artista de rua.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Espelho compacto",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-espelho-compacto",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Permite examinar um reflexo ou ponto cego.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Haste de sondagem",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-haste-de-sondagem",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Ferramenta longa de manutenção.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Cadeado de comporta",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-cadeado-de-comporta",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Objeto de controle de manutenção.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Prancheta da portaria",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-prancheta-da-portaria",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Contém anotações de turno.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Ampulheta quebrada",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-ampulheta-quebrada",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Objeto decorativo de significado incerto.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Chave do carrossel",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-chave-do-carrossel",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Aciona um painel compatível apenas no cenário.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Espátula de restauro",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-espatula-de-restauro",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Ferramenta delicada para conservar pinturas.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Régua de madeira",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-regua-de-madeira",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Material escolar conservado desde o internato.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Sino escolar",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-sino-escolar",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Peça que sinaliza intervalos e horários.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Estojo de frascos",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-estojo-de-frascos",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Pequenos recipientes vazios de laboratório.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Receituário antigo",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-receituario-antigo",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Papel de receitas com datas de décadas passadas.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Corrente de ancoragem",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-corrente-de-ancoragem",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Ferro marítimo pesado, de difícil transporte.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Estilete de montagem",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-estilete-de-montagem",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Ferramenta para cortar película.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Pá de jardinagem",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-pa-de-jardinagem",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Ferramenta comum do jardim botânico.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Tesoura de poda",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-tesoura-de-poda",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Ferramenta de jardinagem com trava.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Colete refletivo",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-colete-refletivo",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Roupa de alta visibilidade rodoviária.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Molho de chaves",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-molho-de-chaves",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Chaves sem etiquetas confiáveis.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Cartão de acesso",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-cartao-de-acesso",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Cartão corporativo com código gasto.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Caderno de hinos",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-caderno-de-hinos",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Músicas e anotações pessoais.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Máscara de ensaio",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-mascara-de-ensaio",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Adereço de teatro usado para ocultar o rosto.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Microfone de mão",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-microfone-de-mao",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Equipamento de apresentação.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Carimbo numérico",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-carimbo-numerico",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Marca documentos com sequência manual.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Rádio de comunicação",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-radio-de-comunicacao",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Transceptor simples de alcance limitado.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Lanterna ferroviária",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-lanterna-ferroviaria",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Objeto ligado à história de O Operador do Último Trem; peça recorrente no cenário estação desativada.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Chave de manutenção",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-chave-de-manutencao",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Objeto ligado à história de O Operador do Último Trem; peça recorrente no cenário estação desativada.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Chave da cabine",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-chave-da-cabine",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Objeto ligado à história de O Homem dos Cartazes; peça recorrente no cenário cinema de rua.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Mapa plastificado",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-mapa-plastificado",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Objeto ligado à história de A Caçadora da Geada; peça recorrente no cenário hotel no alto da serra.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Antena telescópica",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-antena-telescopica",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Objeto ligado à história de O Técnico da Frequência; peça recorrente no cenário torre de retransmissão.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Caderno botânico",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-caderno-botanico",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Objeto ligado à história de O Jardineiro das Cinzas; peça recorrente no cenário jardim botânico fechado.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Arpão de manutenção",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-arpao-de-manutencao",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Objeto ligado à história de O Zelador do Aquário; peça recorrente no cenário oceanário vazio.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Sino de mão",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-sino-de-mao",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Objeto ligado à história de O Pastor da Antena; peça recorrente no cenário acampamento de peregrinação.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  },
+  {
+    "name": "Chave da moldura",
+    "type": "equipamento",
+    "img": "systems/brutal-rpg/assets/equipamento.svg",
+    "flags": {
+      "brutal-rpg": {
+        "sourceId": "item-chave-da-moldura",
+        "edition": "0.2.0",
+        "original": true
+      }
+    },
+    "system": {
+      "description": "Objeto ligado à história de A Restauradora dos Retratos; peça recorrente no cenário mansão transformada em galeria.",
+      "page": 0,
+      "notes": "Objeto narrativo: sem bônus próprio; consulte a Diretora.",
+      "scene": "",
+      "uses": {
+        "value": 0,
+        "max": 0
+      }
+    }
+  }
+]
