@@ -1,0 +1,7 @@
+<section class="brutal-item-wrap">
+  <header class="brutal-banner"><div class="brutal-headline"><div class="brutal-eyebrow">BRUTAL / {{item.type}}</div><input class="brutal-name" name="name" value="{{item.name}}"/></div></header>
+  <div class="brutal-panel"><label>Descrição / regra de referência<textarea name="system.description" rows="7">{{system.description}}</textarea></label>
+    <div class="brutal-grid-2"><label>Página do manual<input type="number" name="system.page" min="0" value="{{system.page}}"/></label><label>Custo (PT/PH)<input type="number" name="system.cost" min="0" value="{{system.cost}}"/></label><label>Estilo / requisito<input name="system.style" value="{{system.style}}" /></label><label>Cena<input name="system.scene" value="{{system.scene}}"/></label><label>Recarga<input name="system.recharge" value="{{system.recharge}}" /></label><label>Nível de Brutalidade<input type="number" min="0" max="3" name="system.threatNb" value="{{system.threatNb}}" /></label></div>
+  </div>
+  <div class="brutal-panel"><h3>CONTROLE DE USOS</h3><div class="brutal-grid-2"><label>Disponíveis<input type="number" min="0" name="system.uses.value" value="{{system.uses.value}}" /></label><label>Máximo<input type="number" min="0" name="system.uses.max" value="{{system.uses.max}}" /></label></div><label>Notas<textarea name="system.notes" rows="3">{{system.notes}}</textarea></label></div>
+</section>

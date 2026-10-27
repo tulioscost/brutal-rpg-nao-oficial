@@ -1,0 +1,9 @@
+{
+  "BRUTAL": {
+    "survivor":"Sobrevivente",
+    "killer":"Assassino",
+    "pool":"Pilha de Intérprete",
+    "tension":"Pontos de Tensão",
+    "horror":"Pontos de Horror"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "brutal-rpg",
+  "type": "system",
+  "title": "BRUTAL RPG — Sistema Comunitário",
+  "description": "Adaptação técnica independente de BRUTAL RPG 0.3 para Foundry VTT, sem reprodução do livro. Requer o manual original para consulta das habilidades e condições específicas.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "Adaptação técnica comunitária (não oficial)"
+    }
+  ],
+  "esmodules": [
+    "brutal.mjs"
+  ],
+  "styles": [
+    "styles/brutal.css"
+  ],
+  "languages": [
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "sobrevivente": {},
+      "assassino": {}
+    },
+    "Item": {
+      "habilidade": {},
+      "vantagem": {},
+      "recurso": {},
+      "pista": {},
+      "ameaca": {},
+      "acao": {},
+      "apavoro": {},
+      "condicao": {}
+    }
+  },
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+  "initiative": "1d1 + @system.initiative - 1",
+  "primaryTokenAttribute": "pool",
+  "secondaryTokenAttribute": "escape",
+  "socket": true,
+  "background": "assets/background.svg",
+  "url": "https://github.com/tulioscost/brutal-rpg-nao-oficial",
+  "manifest": "https://raw.githubusercontent.com/tulioscost/brutal-rpg-nao-oficial/main/system.json",
+  "download": "https://github.com/tulioscost/brutal-rpg-nao-oficial/releases/download/v0.1.0/brutal-rpg-v0.1.0.zip",
+  "readme": "https://github.com/tulioscost/brutal-rpg-nao-oficial/blob/main/README.md"
+}

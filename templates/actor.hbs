@@ -1,0 +1,92 @@
+{{#if isHidden}}
+  <section class="brutal-hidden"><h2>ARQUIVO CONFIDENCIAL</h2><p>A ficha do Assassino é reservada à Diretora.</p></section>
+{{else}}
+<section class="brutal-wrap">
+  <header class="brutal-banner">
+    <div class="brutal-portrait"><img src="{{actor.img}}" alt="Retrato"/></div>
+    <div class="brutal-headline">
+      <div class="brutal-eyebrow">BRUTAL <span>—</span> {{#if isSurvivor}}DOSSIÊ DE SOBREVIVENTE{{else}}DOSSIÊ DO ASSASSINO{{/if}}</div>
+      <input class="brutal-name" name="name" value="{{actor.name}}" aria-label="Nome do personagem" {{#unless owner}}disabled{{/unless}} />
+      <div class="brutal-headsub">{{#if isSurvivor}}{{archetype}} • Iniciativa {{initiative}}{{else}}Ameaça primária + secundária • NB {{stats.total}}{{/if}}</div>
+    </div>
+    <div class="brutal-filmicon">◈<span>REC</span></div>
+  </header>
+  {{#if isSurvivor}}
+    <section class="brutal-metrics">
+      <div class="brutal-metric"><div class="label">PILHA DE INTÉRPRETE</div><div class="brutal-numberline"><input type="number" name="system.pool.value" min="0" max="6" value="{{system.pool.value}}" /><span>/6 d6</span></div></div>
+      <div class="brutal-metric"><div class="label">FUGA</div><div class="brutal-numberline"><input type="number" name="system.escape.value" min="0" max="6" value="{{system.escape.value}}"/><span>/ {{system.escape.max}}</span></div></div>
+      <div class="brutal-metric"><div class="label">TENSÃO</div><div class="brutal-numberline"><button type="button" data-action="pt-sub" title="Remover PT">−</button><strong>{{system.tension}}</strong><button type="button" data-action="pt-add" title="Adicionar PT">+</button><span>/10</span></div></div>
+      <div class="brutal-metric"><div class="label">CONDIÇÃO</div><div class="brutal-status {{#if system.dead}}dead{{/if}}">{{#if system.dead}}MORTA{{else}}{{#if system.escaped}}ESCAPOU{{else}}ATIVA{{/if}}{{/if}}</div></div>
+    </section>
+  {{else}}
+    <section class="brutal-metrics">
+      <div class="brutal-metric"><div class="label">PILHA DA DIRETORA</div><div class="brutal-numberline"><input type="number" name="system.pool.value" min="0" value="{{system.pool.value}}"/><span>d6</span></div></div>
+      <div class="brutal-metric"><div class="label">HORROR</div><div class="brutal-numberline"><button type="button" data-action="ph-sub">−</button><strong>{{system.horror}}</strong><button type="button" data-action="ph-add">+</button><span>PH</span></div></div>
+      <div class="brutal-metric"><div class="label">NB TOTAL</div><div class="brutal-numberline"><strong>{{stats.total}}</strong><span>(fuga {{stats.escape}})</span></div></div>
+      <div class="brutal-metric"><div class="label">DESCARTE GLOBAL</div><div class="brutal-numberline"><strong>{{discard}}</strong><span>d6</span></div></div>
+    </section>
+  {{/if}}
+  <nav class="brutal-tabs">
+    <button type="button" class="active" data-tab="perfil">PERFIL</button>
+    <button type="button" data-tab="rolagens">{{#if isSurvivor}}ROLAGENS & MANOBRAS{{else}}CAÇADA & AÇÕES{{/if}}</button>
+    <button type="button" data-tab="itens">ITENS & PODERES</button>
+    <button type="button" data-tab="historia">HISTÓRIA</button>
+  </nav>
+  <section class="brutal-pane active" data-pane="perfil">
+    {{#if isSurvivor}}
+      <div class="brutal-grid-2">
+        <div class="brutal-panel">
+          <h3>ARQUÉTIPO & ESTILOS</h3>
+          <label>Arquétipo<select name="system.archetype">{{#each archetypes}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+          <div class="brutal-actions"><button type="button" data-action="apply-advantages">APLICAR 5 VANTAGENS DO ARQUÉTIPO</button></div>
+          <label>Selecionar Habilidade inicial<select data-field="ability">{{#each initialAbilities}}<option value="{{name}}">{{name}}</option>{{/each}}</select></label><button type="button" data-action="choose-ability">ADICIONAR HABILIDADE INICIAL</button>
+          <div class="brutal-stylelist">{{#each styleChecks}}<div class="brutal-style {{#unless owned}}unowned{{/unless}}"><span>{{label}}{{#unless owned}} <small>(não treinado)</small>{{/unless}}</span>{{#if owned}}<label><input type="checkbox" name="system.disabled.{{key}}" {{#if disabled}}checked{{/if}}> Incapacitado</label>{{/if}}</div>{{/each}}</div>
+        </div>
+        <div class="brutal-panel">
+          <h3>MARCADORES DE CONDIÇÃO</h3><div class="brutal-conditiongrid">{{#each conditions}}<label>{{label}}<input type="number" min="0" name="system.conditions.{{key}}" value="{{value}}" /></label>{{/each}}</div>
+          <label class="brutal-check"><input type="checkbox" name="system.dead" {{#if system.dead}}checked{{/if}}> Sobrevivente morta</label>
+          <label class="brutal-check"><input type="checkbox" name="system.escaped" {{#if system.escaped}}checked{{/if}}> Fugiu deste Encontro</label>
+        </div>
+      </div>
+      <div class="brutal-panel"><h3>INDIVIDUALIDADES</h3><div class="brutal-grid-2"><label>Item Icônico<input type="text" name="system.iconic" value="{{system.iconic}}"/></label><label>Relação Afetiva<input type="text" name="system.bond" value="{{system.bond}}"/></label><label>Desejo Obscuro<input type="text" name="system.darkDesire" value="{{system.darkDesire}}"/></label>{{#if gm}}<label>Função Oculta (reservada à Diretora)<input type="text" name="system.hiddenRole" value="{{system.hiddenRole}}"/></label>{{/if}}</div></div>
+    {{else}}
+      <div class="brutal-grid-2">
+        <div class="brutal-panel"><h3>AMEAÇAS</h3><label>Ameaça Primária<select name="system.primary">{{#each primaryChoices}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label><label>Ameaça Secundária<select name="system.secondary">{{#each secondaryChoices}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label><div class="brutal-actions"><button type="button" data-action="reset-killer">CALCULAR PILHAS INICIAIS</button><button type="button" data-action="active-killer">{{#if killerActive}}ASSASSINO ATIVO{{else}}DEFINIR ASSASSINO ATIVO{{/if}}</button></div></div>
+        <div class="brutal-panel"><h3>LIMITES DERIVADOS DO NB</h3><dl class="brutal-stats"><dt>Dados iniciais</dt><dd>{{stats.initialDice}}</dd><dt>PH iniciais</dt><dd>{{stats.initialHorror}}</dd><dt>Fuga base</dt><dd>{{stats.escape}}</dd><dt>Passos de Suspense</dt><dd>{{stats.steps}}</dd><dt>Armadilhas iniciais</dt><dd>{{stats.traps}}</dd><dt>Sustos livres</dt><dd>{{stats.freeScares}}</dd></dl></div>
+      </div>
+      <div class="brutal-grid-2"><div class="brutal-panel"><label>Estigma<textarea name="system.stigma" rows="4">{{system.stigma}}</textarea></label><label>Intentos Horríveis e Únicos<textarea name="system.intent" rows="4">{{system.intent}}</textarea></label></div><div class="brutal-panel"><label>Segredos da Diretora<textarea name="system.secret" rows="10">{{system.secret}}</textarea></label></div></div>
+    {{/if}}
+  </section>
+  <section class="brutal-pane" data-pane="rolagens">
+    {{#if isSurvivor}}
+      <div class="brutal-panel"><h3>TESTE • d6</h3><div class="brutal-testgrid">
+          <label>Dados da Pilha<input data-field="rollDice" type="number" min="0" max="6" value="1"/></label>
+          <label>Dados da Fuga<input data-field="escapeDice" type="number" min="0" max="6" value="0"/></label>
+          <label>Estilo<select data-field="rollStyle">{{#each testStyles}}<option value="{{value}}">{{label}}</option>{{/each}}</select></label>
+          <label>Recurso (−1 DIF, consome 1 uso)<select data-field="rollResource"><option value="">Sem Recurso</option>{{#each testResources}}<option value="{{id}}">{{name}} ({{system.uses.value}})</option>{{/each}}</select></label>
+        </div><label class="brutal-check"><input type="checkbox" data-field="rollComplex"/> Teste Complexo</label><div class="brutal-actions"><button type="button" data-action="roll">ROLAR TESTE</button><button type="button" data-action="scare">TESTE DE SUSTO</button></div><p class="brutal-help">Sucesso: resultado ≥ 4 (ou 3 com Estilo válido). Falhas sacrificadas fora de Encontro e descartadas em Encontros ou Sustos. O 6 também supera Teste Complexo.</p></div>
+      <div class="brutal-panel"><h3>ABORDAGENS DE SUSPENSE</h3><div class="brutal-moves"><button type="button" data-action="approach" data-key="direta">DIRETA</button><button type="button" data-action="approach" data-key="cautelosa">CAUTELOSA</button><button type="button" data-action="approach" data-key="investigativa">INVESTIGATIVA</button></div><p class="brutal-help">Registra a escolha no chat. A Diretora resolve Caminhos, Armadilhas e Recompensas.</p></div>
+      <div class="brutal-panel"><h3>MANOBRAS DE ENCONTRO</h3><label>Outro personagem (Ajuda / Arriscar Tudo)<select data-field="targetId"><option value="">Selecione a Sobrevivente</option>{{#each otherActors}}<option value="{{id}}">{{name}}</option>{{/each}}</select></label>
+        <div class="brutal-moves"><button type="button" data-action="move" data-move="vazar">VAZAR DALI</button><button type="button" data-action="move" data-move="partir">PARTIR PRA CIMA</button><button type="button" data-action="move" data-move="ajudar">AJUDAR ALGUÉM</button><button type="button" data-action="move" data-move="distrair">DISTRAIR</button><button type="button" data-action="move" data-move="folego">RECUPERAR FÔLEGO</button><button type="button" data-action="move" data-move="arriscar">ARRISCAR TUDO</button></div>
+        <p class="brutal-help">Manobras só funcionam no Encontro iniciado pela Diretora. Consulte as páginas 98–100 do manual para limites e detalhes.</p>
+      </div>
+    {{else}}
+      <div class="brutal-panel"><h3>ROTEIRO DO SUSPENSE</h3><p>Estado: <strong>{{#if suspense.active}}ATIVO{{else}}INATIVO{{/if}}</strong> · Rodada {{suspense.round}} · Passos {{suspense.steps}} / {{suspense.target}} · Armadilhas {{suspense.traps}}</p><div class="brutal-actions"><button type="button" data-action="start-suspense">INICIAR SUSPENSE</button><button type="button" data-action="step-suspense">+ PASSO</button><button type="button" data-action="trap-more">+ ARMADILHA</button><button type="button" data-action="trap-less">− ARMADILHA</button><button type="button" data-action="round-suspense">PRÓX. RODADA</button><button type="button" data-action="end-suspense">ENCERRAR</button></div><p class="brutal-help">Para conceder um Passo, selecione antes a Sobrevivente no campo Alvo abaixo. Recompensa de 3 PT por Passo ao finalizar.</p></div>
+      <div class="brutal-panel"><h3>CONTROLE DA DIRETORA</h3><div class="brutal-actions"><button type="button" data-action="start-encounter">INICIAR ENCONTRO</button><button type="button" data-action="end-encounter">ENCERRAR ENCONTRO</button></div><p>Estado: <strong>{{#if encounter}}ENCONTRO ATIVO{{else}}CENA LIVRE / SUSPENSE{{/if}}</strong></p></div>
+      <div class="brutal-panel"><h3>AÇÕES GERAIS</h3><label>Alvo<select data-field="targetId"><option value="">Selecione a Sobrevivente</option>{{#each targets}}<option value="{{id}}">{{name}}</option>{{/each}}</select></label><div class="brutal-moves"><button type="button" data-action="killer-action" data-key="scare">ASSUSTAR</button><button type="button" data-action="killer-action" data-key="wound">FERIR</button><button type="button" data-action="killer-action" data-key="kill">MATAR</button><button type="button" data-action="killer-action" data-key="escape">ESCAPAR</button></div><p class="brutal-help">Outras Ações, Estigmas e Apavoros exigem aplicação narrativa pela Diretora. Assustar consome um Susto livre quando realizado em Encontro.</p></div>
+      <div class="brutal-grid-2"><div class="brutal-panel"><label>Sustos livres remanescentes<input type="number" min="0" name="system.freeScares" value="{{system.freeScares}}"/></label></div><div class="brutal-panel"><label>Penalidades acumuladas de Distrair<input type="number" min="0" name="system.distracted" value="{{system.distracted}}"/></label></div></div>
+    {{/if}}
+  </section>
+  <section class="brutal-pane" data-pane="itens">
+    <div class="brutal-panel"><h3>HABILIDADES <button type="button" data-action="item-create" data-type="habilidade">+</button></h3>{{#each abilities}}<div class="brutal-inventory"><button type="button" data-action="item-open" data-item-id="{{id}}">{{name}}</button><small>p. {{system.page}}</small><button type="button" data-action="item-delete" data-item-id="{{id}}">×</button></div>{{/each}}</div>
+    <div class="brutal-panel"><h3>VANTAGENS <button type="button" data-action="item-create" data-type="vantagem">+</button></h3>{{#each advantages}}<div class="brutal-inventory"><button type="button" data-action="item-open" data-item-id="{{id}}">{{name}}</button><small>{{system.cost}} PT • {{system.style}}</small><button type="button" data-action="item-delete" data-item-id="{{id}}">×</button></div>{{/each}}</div>
+    <div class="brutal-panel"><h3>RECURSOS & PISTAS <button type="button" data-action="item-create" data-type="recurso">+ RECURSO</button><button type="button" data-action="item-create" data-type="pista">+ PISTA</button></h3>{{#each equipment}}<div class="brutal-inventory"><button type="button" data-action="item-open" data-item-id="{{id}}">{{name}}</button><small>{{system.uses.value}} / {{system.uses.max}} usos</small><button type="button" data-action="res-use" data-item-id="{{id}}">USAR</button><button type="button" data-action="item-delete" data-item-id="{{id}}">×</button></div>{{/each}}</div>
+    {{#unless isSurvivor}}<div class="brutal-panel"><h3>AÇÕES, APAVOROS & AMEAÇAS <button type="button" data-action="item-create" data-type="acao">+ AÇÃO</button><button type="button" data-action="item-create" data-type="apavoro">+ APAVORO</button></h3>{{#each actions}}<div class="brutal-inventory"><button type="button" data-action="item-open" data-item-id="{{id}}">{{name}}</button><small>{{type}}</small><button type="button" data-action="item-delete" data-item-id="{{id}}">×</button></div>{{/each}}</div>{{/unless}}
+  </section>
+  <section class="brutal-pane" data-pane="historia">
+    <div class="brutal-panel"><h3>REGISTROS DO THRILLER</h3>{{#if isSurvivor}}<label>Aparência<textarea name="system.looks" rows="3">{{system.looks}}</textarea></label>{{/if}}<label>Biografia<textarea name="system.bio" rows="6">{{system.bio}}</textarea></label><label>Notas e eventos<textarea name="system.notes" rows="8">{{system.notes}}</textarea></label></div>
+    {{#if isSurvivor}}<div class="brutal-panel"><label>Cicatrizes / Marcos<textarea name="system.scars" rows="5">{{system.scars}}</textarea></label></div>{{/if}}
+  </section>
+  <footer class="brutal-footer">BRUTAL 0.3 — ADAPTAÇÃO NÃO OFICIAL | <span>ROLE OS DADOS. SOBREVIVA SE PUDER.</span></footer>
+</section>
+{{/if}}
