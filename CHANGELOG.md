@@ -1,3 +1,12 @@
+## v0.4.1 — Correção da abertura das fichas (Foundry 14.369)
+
+- Corrige falha de construção `TypeError: Cannot add property minWidth, object is not extensible`.
+- Remove `minWidth` e `minHeight` de `BrutalActorSheet.DEFAULT_OPTIONS.position`; mantém tamanho padrão e layout responsivo CSS.
+- Amplia diagnóstico para indicar fase da falha e chaves de `position`.
+- Adiciona teste de regressão com opções de posição não-extensíveis.
+- Preserva módulos obrigatórios, dado ilustrado e 152 artes dos compêndios.
+- Testes locais aprovados; validação no aplicativo Foundry continua pendente.
+
 # Alterações BRUTAL RPG
 
 ## v0.4.0 — 2026-10-27

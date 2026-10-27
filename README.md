@@ -1,4 +1,8 @@
-# Atualização v0.4.0 — fichas e dados 3D obrigatórios
+# Atualização v0.4.1 — correção da abertura das fichas
+
+A falha `Cannot add property minWidth, object is not extensible` observada no Foundry 14.369 foi corrigida na configuração do `ActorSheetV2` (veja a seção **Correção da ficha v0.4.1**).
+
+## Recursos anteriores (v0.4.0) — fichas e dados 3D obrigatórios
 
 **Compatibilidade declarada:** Foundry VTT 14 (alvo 14.369). **Não validado em instância licenciada real**; verificações locais de JavaScript, integração simulada e estrutura de arquivos foram aprovadas.
 
@@ -19,17 +23,17 @@ O sistema registra no evento `diceSoNiceReady` um preset **BRUTAL — D6 Slasher
 - Partes Handlebars são inseridas no **formulário** administrado por `ActorSheetV2`/`ItemSheetV2`, sem marcar `root: true` sobre um `<section>` interno. Esse ajuste visa evitar falhas de renderização.
 - Abertura forçada para verificação: `await game.brutal.diagnoseActorSheet()` (ou `macros/08-diagnosticar-ficha.js`).
 - Para diagnóstico com um ID: `await game.brutal.diagnoseActorSheet("ID-DO-ATOR")`. A função imprime os detalhes do erro no **Console do navegador (F12)**.
-- Caso uma ficha antiga esteja selecionada, abra suas opções de configuração e selecione a ficha **BRUTAL**. Se persistir após instalar a v0.4.0, copie o erro completo do Console. Sem o log da execução real, a causa precisa não pode ser assegurada.
+- Caso uma ficha antiga esteja selecionada, abra suas opções de configuração e selecione a ficha **BRUTAL**. Se persistir após instalar a v0.4.1, copie o erro completo do Console. Sem o log da execução real, a causa precisa não pode ser assegurada.
 
 ## Distribuição
 
-A Release **v0.4.0** contém: `brutal-rpg-v0.4.0.zip`, `system.json`, `RELEASE_v0.4.0.md`. O primeiro é o ZIP instalável; os três devem ser anexados separadamente à Release de tag `v0.4.0`.
+A Release **v0.4.1** contém: `brutal-rpg-v0.4.1.zip`, `system.json`, `RELEASE_v0.4.1.md`. O primeiro é o ZIP instalável; os três devem ser anexados separadamente à Release de tag `v0.4.1`.
 
 ---
 
 # BRUTAL RPG — Sistema comunitário para Foundry VTT
 
-**Versão do pacote:** 0.4.0 (correção de fichas e Dice So Nice integrado)
+**Versão do pacote:** 0.4.1 (correção de construção da ficha no Foundry 14)
 **Livro utilizado:** *BRUTAL RPG 0.3*, Léo “Craw” Naito, Bruce Barbosa e Thales “Bif” Cunha, Editora New Order.
 **Alvo de implementação:** Foundry VTT 14, incluindo o build 14.369.
 **Status de testes:** sintaxe JavaScript e verificações automatizadas do motor aprovadas; **ainda não foi possível executar uma sessão dentro de uma instalação real do Foundry 14.369**. Trata-se de uma versão inicial, não de um sistema oficial ou certificado.
@@ -39,7 +43,7 @@ A Release **v0.4.0** contém: `brutal-rpg-v0.4.0.zip`, `system.json`, `RELEASE_v
 ## Repositório e distribuição
 
 - **Código-fonte:** https://github.com/tulioscost/brutal-rpg-nao-oficial
-- **Assets da Release `v0.4.0`:** `brutal-rpg-v0.4.0.zip` (instalável), `system.json` (manifesto) e `RELEASE_v0.4.0.md` (notas)
+- **Assets da Release `v0.4.1`:** `brutal-rpg-v0.4.1.zip` (instalável), `system.json` (manifesto) e `RELEASE_v0.4.1.md` (notas)
 - **Manifesto estável:** `https://raw.githubusercontent.com/tulioscost/brutal-rpg-nao-oficial/main/system.json`
 - **Publicação:** [docs/PUBLICACAO.md](docs/PUBLICACAO.md)
 - **Compilação reprodutível do ZIP:** `python3 scripts/build_release.py`
@@ -48,7 +52,7 @@ A Release **v0.4.0** contém: `brutal-rpg-v0.4.0.zip`, `system.json`, `RELEASE_v
 
 1. Feche o Foundry VTT (ou interrompa seu servidor).
 2. Abra a pasta de dados do Foundry. Dentro de `Data/systems`, crie uma pasta `brutal-rpg`.
-3. Extraia o conteúdo de `brutal-rpg-v0.4.0.zip` **dentro dessa pasta**. O manifesto deve ficar em `Data/systems/brutal-rpg/system.json` (e não em subpasta dupla).
+3. Extraia o conteúdo de `brutal-rpg-v0.4.1.zip` **dentro dessa pasta**. O manifesto deve ficar em `Data/systems/brutal-rpg/system.json` (e não em subpasta dupla).
 4. Inicie o Foundry 14.369, crie um Mundo e escolha o sistema **BRUTAL RPG — Sistema Comunitário**.
 5. Na primeira entrada como Diretora, três compêndios serão criados no Mundo automaticamente: **BRUTAL | Assassinos**, **BRUTAL | Sobreviventes** e **BRUTAL | Itens**. Para reinstalar sem duplicar, execute `await game.brutal.installCompendiums();` pelo console (F12) ou pela macro 07. O comando `installCatalogue()` permanece disponível para importar referências do manual em pasta separada.
 6. Crie personagens nas fichas `sobrevivente` ou `assassino` pela aba de Atores.
@@ -60,7 +64,7 @@ A Release **v0.4.0** contém: `brutal-rpg-v0.4.0.zip`, `system.json`, `RELEASE_v
 
 `https://raw.githubusercontent.com/tulioscost/brutal-rpg-nao-oficial/main/system.json`
 
-O `system.json` na raiz do repositório aponta para o arquivo `brutal-rpg-v0.4.0.zip` da Release `v0.2.0`. **Esse link só funciona quando o código-fonte e a Release tiverem sido publicados**, com esses nomes exatos. Para publicação, consulte [docs/PUBLICACAO.md](docs/PUBLICACAO.md).
+O `system.json` na raiz do repositório aponta para o arquivo `brutal-rpg-v0.4.1.zip` da Release `v0.4.1`. **Esse link só funciona quando o código-fonte e a Release tiverem sido publicados**, com esses nomes exatos. Para publicação, consulte [docs/PUBLICACAO.md](docs/PUBLICACAO.md).
 
 ## Recursos presentes
 
@@ -140,3 +144,10 @@ Os testes usam ambiente simulado (sem servidor Foundry) para verificar fórmula 
 **Troca de retrato:** clique em **Trocar foto** no canto inferior da imagem da ficha; use o seletor do Foundry para escolher ou enviar o arquivo. A imagem é salva em `actor.img` e na textura do protótipo do token. Personagens importados com retrato personalizado preservam a imagem ao atualizar os acervos (não são sobrescritos).
 
 **Pesquisa e inspiração:** consulte [docs/REFERENCIAS.md](docs/REFERENCIAS.md). Todos os perfis têm identidade, biografia e equipamentos originais; não reproduzem personagens de filmes, livros ou jogos.
+
+
+## Correção da ficha v0.4.1
+
+O diagnóstico do Foundry 14.369 identificou `TypeError: Cannot add property minWidth, object is not extensible` durante `new BrutalActorSheet`. A causa era `position.minWidth` (e `position.minHeight`) em `static DEFAULT_OPTIONS`. Os campos foram removidos; foram mantidos somente `position.width` e `position.height`, conforme a API `ApplicationV2`. A responsividade continua definida em CSS. O teste `node tests/sheets.mjs` agora simula a mesclagem de opções de posição de um objeto não-extensível para evitar reincidência.
+
+**Validação ainda pendente:** a correção foi reproduzida e testada com simulação; não foi possível abrir a interface em um Foundry 14.369 real neste ambiente. Após atualizar, execute `await game.brutal.diagnoseActorSheet()` no Console para confirmar a janela. Esse comando agora informa também a fase da falha.
