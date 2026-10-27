@@ -1,16 +1,35 @@
-## Atualização v0.3.0 — ficha de Ator e imagens individuais
+# Atualização v0.4.0 — fichas e dados 3D obrigatórios
 
-- Fichas de Sobrevivente e Assassino com 27 ações registradas explicitamente em `ApplicationV2` (Foundry VTT v14); a interface usa `render({force:true})` para os seletores/janelas.
-- Troca de retratos na ficha: clique em **TROCAR FOTO** para selecionar imagem e atualizar o token protótipo; a ficha do Item também disponibiliza **TROCAR ÍCONE**.
-- 152 novas imagens locais em `assets/compendios/`: 20 Assassinos (WebP), 24 Sobreviventes (WebP) e 108 itens (SVG com ilustração pertinente).
-- Instalação/reinstalação com migração seletiva: itens e retratos antigos com ícones genéricos são atualizados, enquanto imagens alteradas pela Diretora são preservadas.
-- Para executar novamente a migração: `await game.brutal.installCompendiums()`.
+**Compatibilidade declarada:** Foundry VTT 14 (alvo 14.369). **Não validado em instância licenciada real**; verificações locais de JavaScript, integração simulada e estrutura de arquivos foram aprovadas.
 
-**Limitação:** testes de desenvolvimento não substituem validação no cliente do Foundry 14.369.
+## Instalação de dependências obrigatórias
+
+Instale e habilite no Mundo antes de criar ou abrir fichas:
+- **Dice Tray (dice-calculator)** — https://foundryvtt.com/packages/dice-calculator (v4.0.0 ou superior)
+- **Dice So Nice! (dice-so-nice)** — https://foundryvtt.com/packages/dice-so-nice (v6.0.0 ou superior)
+
+Ambos constam de `system.json` em `relationships.requires`, o mecanismo formal de dependências do Foundry. Os módulos são aplicativos de terceiros e não estão distribuídos neste repositório.
+
+## Dado 3D automático do BRUTAL
+
+O sistema registra no evento `diceSoNiceReady` um preset **BRUTAL — D6 Slasher** (`brutal-rpg-cinema`) para d6. Cada resultado de 1–6 tem uma imagem própria em `assets/d6/face-1.webp` ... `face-6.webp` (256×256). As rolagens `d6` iniciadas pelo motor do BRUTAL recebem a aparência personalizada automaticamente por `die.options.appearance.system`. O evento `diceSoNiceRollStart` aplica a mesma aparência aos d6 da Dice Tray e de comandos `/roll`, sem rolar novamente nem duplicar mensagens. O Dice So Nice anima as rolagens normais publicadas no chat; **os valores e probabilidades NÃO são alterados**. O preset aparece também no seletor de visuais do módulo. As preferências pessoais de outros sistemas podem continuar distintas.
+
+## Fichas v14 e diagnóstico
+
+- Partes Handlebars são inseridas no **formulário** administrado por `ActorSheetV2`/`ItemSheetV2`, sem marcar `root: true` sobre um `<section>` interno. Esse ajuste visa evitar falhas de renderização.
+- Abertura forçada para verificação: `await game.brutal.diagnoseActorSheet()` (ou `macros/08-diagnosticar-ficha.js`).
+- Para diagnóstico com um ID: `await game.brutal.diagnoseActorSheet("ID-DO-ATOR")`. A função imprime os detalhes do erro no **Console do navegador (F12)**.
+- Caso uma ficha antiga esteja selecionada, abra suas opções de configuração e selecione a ficha **BRUTAL**. Se persistir após instalar a v0.4.0, copie o erro completo do Console. Sem o log da execução real, a causa precisa não pode ser assegurada.
+
+## Distribuição
+
+A Release **v0.4.0** contém: `brutal-rpg-v0.4.0.zip`, `system.json`, `RELEASE_v0.4.0.md`. O primeiro é o ZIP instalável; os três devem ser anexados separadamente à Release de tag `v0.4.0`.
+
+---
 
 # BRUTAL RPG — Sistema comunitário para Foundry VTT
 
-**Versão do pacote:** 0.2.0 (fichas responsivas e compêndios originais)
+**Versão do pacote:** 0.4.0 (correção de fichas e Dice So Nice integrado)
 **Livro utilizado:** *BRUTAL RPG 0.3*, Léo “Craw” Naito, Bruce Barbosa e Thales “Bif” Cunha, Editora New Order.
 **Alvo de implementação:** Foundry VTT 14, incluindo o build 14.369.
 **Status de testes:** sintaxe JavaScript e verificações automatizadas do motor aprovadas; **ainda não foi possível executar uma sessão dentro de uma instalação real do Foundry 14.369**. Trata-se de uma versão inicial, não de um sistema oficial ou certificado.
@@ -20,7 +39,7 @@
 ## Repositório e distribuição
 
 - **Código-fonte:** https://github.com/tulioscost/brutal-rpg-nao-oficial
-- **Assets da Release `v0.2.0`:** `brutal-rpg-v0.2.0.zip` (instalável), `system.json` (manifesto) e `RELEASE_v0.2.0.md` (notas)
+- **Assets da Release `v0.4.0`:** `brutal-rpg-v0.4.0.zip` (instalável), `system.json` (manifesto) e `RELEASE_v0.4.0.md` (notas)
 - **Manifesto estável:** `https://raw.githubusercontent.com/tulioscost/brutal-rpg-nao-oficial/main/system.json`
 - **Publicação:** [docs/PUBLICACAO.md](docs/PUBLICACAO.md)
 - **Compilação reprodutível do ZIP:** `python3 scripts/build_release.py`
@@ -29,7 +48,7 @@
 
 1. Feche o Foundry VTT (ou interrompa seu servidor).
 2. Abra a pasta de dados do Foundry. Dentro de `Data/systems`, crie uma pasta `brutal-rpg`.
-3. Extraia o conteúdo de `brutal-rpg-v0.2.0.zip` **dentro dessa pasta**. O manifesto deve ficar em `Data/systems/brutal-rpg/system.json` (e não em subpasta dupla).
+3. Extraia o conteúdo de `brutal-rpg-v0.4.0.zip` **dentro dessa pasta**. O manifesto deve ficar em `Data/systems/brutal-rpg/system.json` (e não em subpasta dupla).
 4. Inicie o Foundry 14.369, crie um Mundo e escolha o sistema **BRUTAL RPG — Sistema Comunitário**.
 5. Na primeira entrada como Diretora, três compêndios serão criados no Mundo automaticamente: **BRUTAL | Assassinos**, **BRUTAL | Sobreviventes** e **BRUTAL | Itens**. Para reinstalar sem duplicar, execute `await game.brutal.installCompendiums();` pelo console (F12) ou pela macro 07. O comando `installCatalogue()` permanece disponível para importar referências do manual em pasta separada.
 6. Crie personagens nas fichas `sobrevivente` ou `assassino` pela aba de Atores.
@@ -41,7 +60,7 @@
 
 `https://raw.githubusercontent.com/tulioscost/brutal-rpg-nao-oficial/main/system.json`
 
-O `system.json` na raiz do repositório aponta para o arquivo `brutal-rpg-v0.2.0.zip` da Release `v0.2.0`. **Esse link só funciona quando o código-fonte e a Release tiverem sido publicados**, com esses nomes exatos. Para publicação, consulte [docs/PUBLICACAO.md](docs/PUBLICACAO.md).
+O `system.json` na raiz do repositório aponta para o arquivo `brutal-rpg-v0.4.0.zip` da Release `v0.2.0`. **Esse link só funciona quando o código-fonte e a Release tiverem sido publicados**, com esses nomes exatos. Para publicação, consulte [docs/PUBLICACAO.md](docs/PUBLICACAO.md).
 
 ## Recursos presentes
 

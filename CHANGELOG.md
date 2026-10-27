@@ -1,3 +1,15 @@
+# Alterações BRUTAL RPG
+
+## v0.4.0 — 2026-10-27
+- Dice Tray e Dice So Nice declarados como dependências obrigatórias (`relationships.requires`).
+- Dados 3D d6 com seis imagens distintas 256×256; as faces de 1 a 6 coincidem com os resultados.
+- Preset registrado com API oficial `diceSoNiceReady`, com compatibilidade para API legada e inicialização idempotente.
+- Aplicação automática de `appearance.system` nos d6 do sistema, Dice Tray e comandos `/roll`.
+- Revisão da montagem dos templates em `ActorSheetV2` / `ItemSheetV2`, evitando `root:true` no formulário.
+- Macro e comando de diagnóstico da abertura de fichas, reportando o erro de execução do Foundry.
+- Mantidos os 3 compêndios, 152 ilustrações, macros e regras anteriores.
+- Testes locais: todas as validações de scripts, arte, regras e dependências aprovadas; execução real no Foundry ainda pendente.
+
 ## v0.3.0
 
 - Registro explícito de ações e abertura de janelas com API `ApplicationV2`.

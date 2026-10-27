@@ -2,8 +2,8 @@
   "id": "brutal-rpg",
   "type": "system",
   "title": "BRUTAL RPG — Sistema Comunitário",
-  "description": "Sistema não oficial BRUTAL RPG 0.3: fichas de Ator compatíveis com Foundry VTT 14, retratos editáveis e compêndios com 152 ilustrações individuais.",
-  "version": "0.3.0",
+  "description": "Sistema não oficial BRUTAL 0.3 para Foundry VTT 14: ficha de Ator revisada, 152 artes de compêndios e d6 ilustrado automático via Dice So Nice.",
+  "version": "0.4.0",
   "compatibility": {
     "minimum": "14",
     "verified": "14",
@@ -55,6 +55,26 @@
   "background": "assets/background.svg",
   "url": "https://github.com/tulioscost/brutal-rpg-nao-oficial",
   "manifest": "https://raw.githubusercontent.com/tulioscost/brutal-rpg-nao-oficial/main/system.json",
-  "download": "https://github.com/tulioscost/brutal-rpg-nao-oficial/releases/download/v0.3.0/brutal-rpg-v0.3.0.zip",
-  "readme": "https://github.com/tulioscost/brutal-rpg-nao-oficial/blob/main/README.md"
+  "download": "https://github.com/tulioscost/brutal-rpg-nao-oficial/releases/download/v0.4.0/brutal-rpg-v0.4.0.zip",
+  "readme": "https://github.com/tulioscost/brutal-rpg-nao-oficial/blob/main/README.md",
+  "relationships": {
+    "requires": [
+      {
+        "id": "dice-calculator",
+        "type": "module",
+        "compatibility": {
+          "minimum": "4.0.0",
+          "verified": "4.0.6"
+        }
+      },
+      {
+        "id": "dice-so-nice",
+        "type": "module",
+        "compatibility": {
+          "minimum": "6.0.0",
+          "verified": "6.4.4"
+        }
+      }
+    ]
+  }
 }

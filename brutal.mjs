@@ -4,6 +4,8 @@ import {setupAPI,receiveSocket} from "./module/rules.mjs";
 import {installCatalogue} from "./module/catalogue.mjs";
 import {installCompendiums} from "./module/compendiums.mjs";
 import {ARCHETYPES,SYSTEM_ID,THREATS} from "./module/constants.mjs";
+import {registerBrutalDice,applyBrutalDice,diceState} from "./module/dice.mjs";
+import {diagnoseActorSheet} from "./module/diagnostics.mjs";
 Hooks.once("init",()=>{
   CONFIG.Actor.dataModels.sobrevivente=SurvivorData;
   CONFIG.Actor.dataModels.assassino=KillerData;
@@ -21,10 +23,22 @@ Hooks.once("init",()=>{
   game.settings.register(SYSTEM_ID,"sacrificeUsed",{scope:"world",config:false,type:Boolean,default:false});
   game.settings.register(SYSTEM_ID,"compendiumsVersion",{scope:"world",config:false,type:String,default:""});
   game.settings.register(SYSTEM_ID,"enabledSafety",{scope:"world",config:true,type:Boolean,default:true,name:"Avisos de segurança",hint:"Exibir lembrete de limites e consentimento nos encontros."});
-  game.brutal={...setupAPI(),installCatalogue,installCompendiums,ARCHETYPES,THREATS};
+  game.brutal={...setupAPI(),installCatalogue,installCompendiums,ARCHETYPES,THREATS,registerBrutalDice,diagnoseActorSheet,diceState};
 
 });
+// Aplica a mesma aparência a d6 disparados pela Dice Tray e por /roll no mundo,
+// sem produzir mensagens adicionais ou animar em duplicidade.
+Hooks.on("diceSoNiceRollStart",(_messageId,context)=>{applyBrutalDice(context?.roll);});
+// Hook documentado do Dice So Nice: só é disparado depois da preparação 3D.
+Hooks.once("diceSoNiceReady",async dice3d=>{try{await registerBrutalDice(dice3d);}catch(error){console.error("BRUTAL | Falha no dado personalizado",error);ui.notifications.error("BRUTAL: o dado personalizado não foi registrado. Consulte F12.");}});
 Hooks.once("ready",async()=>{
+  // Reparo conservador de mundos que já possuíam uma ficha antiga selecionada.
+  // Não altera a preferência pessoal de outra ficha.
+  if(!game.modules.get("dice-calculator")?.active||!game.modules.get("dice-so-nice")?.active){
+    ui.notifications.error("BRUTAL requer Dice Tray (dice-calculator) e Dice So Nice ativados neste Mundo.",{permanent:true});
+  }
+  if(game.dice3d && !diceState.registered)try{await registerBrutalDice(game.dice3d);}catch(e){console.error("BRUTAL | D6",e);}
+
   game.socket.on(`system.${SYSTEM_ID}`,receiveSocket);
   // Primeiro mestre conectado efetua a criação uma única vez por mundo.
   if(game.user.isGM){
