@@ -1,3 +1,10 @@
+## v0.3.0
+
+- Registro explícito de ações e abertura de janelas com API `ApplicationV2`.
+- Correção e testes simulados da preparação da ficha de Ator.
+- Interface de troca de imagem do Item, ajustes responsivos das fichas.
+- 152 imagens individuais e atualização não destrutiva dos acervos existentes.
+
 # 0.2.0 — 27/10/2026
 
 - Retratos trocáveis via FilePicker V14 e novo padrão de token.

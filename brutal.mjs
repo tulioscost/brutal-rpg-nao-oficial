@@ -29,8 +29,8 @@ Hooks.once("ready",async()=>{
   // Primeiro mestre conectado efetua a criação uma única vez por mundo.
   if(game.user.isGM){
     const firstGM=game.users.filter(u=>u.isGM&&u.active)[0];
-    if(firstGM?.id===game.user.id && game.settings.get(SYSTEM_ID,"compendiumsVersion")!=="0.2.0"){
-      try{await installCompendiums({silent:true});ui.notifications.info("BRUTAL RPG: 3 compêndios instalados — Assassinos, Sobreviventes e Itens.");}
+    if(firstGM?.id===game.user.id && game.settings.get(SYSTEM_ID,"compendiumsVersion")!=="0.3.0"){
+      try{await installCompendiums({silent:true});ui.notifications.info("BRUTAL RPG: Compêndios instalados/atualizados, incluindo retratos e ícones individuais.");}
       catch(error){console.error("BRUTAL | Falha na importação automática",error);ui.notifications.error("BRUTAL: falha na criação dos compêndios. Use game.brutal.installCompendiums() para tentar novamente.");}
     }
   }

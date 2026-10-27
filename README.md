@@ -1,3 +1,13 @@
+## Atualização v0.3.0 — ficha de Ator e imagens individuais
+
+- Fichas de Sobrevivente e Assassino com 27 ações registradas explicitamente em `ApplicationV2` (Foundry VTT v14); a interface usa `render({force:true})` para os seletores/janelas.
+- Troca de retratos na ficha: clique em **TROCAR FOTO** para selecionar imagem e atualizar o token protótipo; a ficha do Item também disponibiliza **TROCAR ÍCONE**.
+- 152 novas imagens locais em `assets/compendios/`: 20 Assassinos (WebP), 24 Sobreviventes (WebP) e 108 itens (SVG com ilustração pertinente).
+- Instalação/reinstalação com migração seletiva: itens e retratos antigos com ícones genéricos são atualizados, enquanto imagens alteradas pela Diretora são preservadas.
+- Para executar novamente a migração: `await game.brutal.installCompendiums()`.
+
+**Limitação:** testes de desenvolvimento não substituem validação no cliente do Foundry 14.369.
+
 # BRUTAL RPG — Sistema comunitário para Foundry VTT
 
 **Versão do pacote:** 0.2.0 (fichas responsivas e compêndios originais)
