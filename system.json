@@ -2,8 +2,8 @@
   "id": "brutal-rpg",
   "type": "system",
   "title": "BRUTAL RPG — Sistema Comunitário",
-  "description": "Sistema não oficial BRUTAL 0.3 para Foundry VTT 14 com estética inspirada diretamente em cartazes de filme trash, VHS de locadora e interface desgastada.",
-  "version": "0.5.1",
+  "description": "Sistema não oficial BRUTAL 0.3 para Foundry VTT 14 com estética trash/VHS e botões inspirados na frente de videocassetes para sidebar, chat e Dice Tray.",
+  "version": "0.5.5",
   "compatibility": {
     "minimum": "14",
     "verified": "14",
@@ -18,7 +18,8 @@
     "brutal.mjs"
   ],
   "styles": [
-    "styles/brutal.css"
+    "styles/brutal.css",
+    "styles/brutal-vhs-chat-sidebar.css"
   ],
   "languages": [
     {
@@ -52,10 +53,10 @@
   "primaryTokenAttribute": "pool",
   "secondaryTokenAttribute": "escape",
   "socket": true,
-  "background": "assets/theme/trash-poster-bg.png",
+  "background": "assets/theme/splash-vhs-trash.png",
   "url": "https://github.com/tulioscost/brutal-rpg-nao-oficial",
   "manifest": "https://raw.githubusercontent.com/tulioscost/brutal-rpg-nao-oficial/main/system.json",
-  "download": "https://github.com/tulioscost/brutal-rpg-nao-oficial/releases/download/v0.5.1/brutal-rpg-v0.5.1.zip",
+  "download": "https://github.com/tulioscost/brutal-rpg-nao-oficial/releases/download/v0.5.5/brutal-rpg-v0.5.5.zip",
   "readme": "https://github.com/tulioscost/brutal-rpg-nao-oficial/blob/main/README.md",
   "relationships": {
     "requires": [

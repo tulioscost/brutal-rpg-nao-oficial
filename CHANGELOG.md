@@ -1,4 +1,25 @@
+## v0.5.4
+- Novo hook de chat do Foundry 14 e classe de mensagem própria.
+- Skin de rolagens e sidebar com CSS isolado e carregado por último.
+- Corrigida a faixa decorativa da sidebar para não deslocar as abas.
+- Adicionados testes automatizados para mensagens comuns e testes do sistema.
+
 # Changelog
+
+## v0.5.5
+- Sidebar, chat e botões do Dice Tray reformulados para parecerem botões de videocassete.
+- Campos de entrada do chat e do Dice Tray agora simulam visores digitais esverdeados.
+- Estados hover/active com relevo e pressão física inspirados em aparelhos VHS.
+
+## v0.5.3
+- Estética BRUTAL aplicada às rolagens e resultados do chat.
+- Sidebar inteira do Foundry restilizada para combinar com a interface trash/VHS.
+- Inclusão de splash art definitiva e atualização do background do sistema.
+
+## v0.5.2
+- Retrato com sobreposição de câmera de segurança, scanlines e baixa fidelidade.
+- Mensagens do chat reformuladas para a mesma estética trash/VHS do sistema.
+- Inclusão automática da classe visual do BRUTAL nas mensagens geradas pelo sistema.
 
 ## v0.5.1
 - Ajuste do layout para aderir diretamente ao mockup de referência da estética trash/VHS.

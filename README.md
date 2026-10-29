@@ -1,3 +1,9 @@
+## Visual do chat e sidebar (v0.5.4)
+
+A skin BRUTAL VHS estiliza as mensagens normais e rolagens da aba de chat, bem como as abas e diretórios da sidebar. O evento `renderChatMessageHTML` do Foundry 14 adiciona classes CSS; não altera dados, resultados, rolagens nem mensagens privadas. O arquivo `styles/brutal-vhs-chat-sidebar.css` concentra essas personalizações para permitir manutenção independente.
+
+**Atenção:** a integração foi testada estruturalmente, mas depende de validação visual em uma instalação real do Foundry 14.369. Outros módulos de skin podem sobrescrever parte do CSS.
+
 # Atualização v0.4.2 — correção da abertura das fichas
 
 A falha `Cannot add property minWidth, object is not extensible` observada no Foundry 14.369 foi corrigida na configuração do `ActorSheetV2` (veja a seção **Correção da ficha v0.4.2**).
@@ -33,7 +39,7 @@ A Release **v0.4.2** contém: `brutal-rpg-v0.4.2.zip`, `system.json`, `RELEASE_v
 
 # BRUTAL RPG — Sistema comunitário para Foundry VTT
 
-**Versão do pacote:** 0.4.2 (correção de construção da ficha no Foundry 14)
+**Versão do pacote:** 0.5.4 (visual do chat e sidebar para Foundry 14)
 **Livro utilizado:** *BRUTAL RPG 0.3*, Léo “Craw” Naito, Bruce Barbosa e Thales “Bif” Cunha, Editora New Order.
 **Alvo de implementação:** Foundry VTT 14, incluindo o build 14.369.
 **Status de testes:** sintaxe JavaScript e verificações automatizadas do motor aprovadas; **ainda não foi possível executar uma sessão dentro de uma instalação real do Foundry 14.369**. Trata-se de uma versão inicial, não de um sistema oficial ou certificado.
@@ -43,7 +49,7 @@ A Release **v0.4.2** contém: `brutal-rpg-v0.4.2.zip`, `system.json`, `RELEASE_v
 ## Repositório e distribuição
 
 - **Código-fonte:** https://github.com/tulioscost/brutal-rpg-nao-oficial
-- **Assets da Release `v0.4.2`:** `brutal-rpg-v0.4.2.zip` (instalável), `system.json` (manifesto) e `RELEASE_v0.4.2.md` (notas)
+- **Assets da Release `v0.5.4`:** `brutal-rpg-v0.5.4.zip` (instalável), `system.json` (manifesto) e `RELEASE_v0.5.4.md` (notas)
 - **Manifesto estável:** `https://raw.githubusercontent.com/tulioscost/brutal-rpg-nao-oficial/main/system.json`
 - **Publicação:** [docs/PUBLICACAO.md](docs/PUBLICACAO.md)
 - **Compilação reprodutível do ZIP:** `python3 scripts/build_release.py`
@@ -52,7 +58,7 @@ A Release **v0.4.2** contém: `brutal-rpg-v0.4.2.zip`, `system.json`, `RELEASE_v
 
 1. Feche o Foundry VTT (ou interrompa seu servidor).
 2. Abra a pasta de dados do Foundry. Dentro de `Data/systems`, crie uma pasta `brutal-rpg`.
-3. Extraia o conteúdo de `brutal-rpg-v0.4.2.zip` **dentro dessa pasta**. O manifesto deve ficar em `Data/systems/brutal-rpg/system.json` (e não em subpasta dupla).
+3. Extraia o conteúdo de `brutal-rpg-v0.5.4.zip` **dentro dessa pasta**. O manifesto deve ficar em `Data/systems/brutal-rpg/system.json` (e não em subpasta dupla).
 4. Inicie o Foundry 14.369, crie um Mundo e escolha o sistema **BRUTAL RPG — Sistema Comunitário**.
 5. Na primeira entrada como Diretora, três compêndios serão criados no Mundo automaticamente: **BRUTAL | Assassinos**, **BRUTAL | Sobreviventes** e **BRUTAL | Itens**. Para reinstalar sem duplicar, execute `await game.brutal.installCompendiums();` pelo console (F12) ou pela macro 07. O comando `installCatalogue()` permanece disponível para importar referências do manual em pasta separada.
 6. Crie personagens nas fichas `sobrevivente` ou `assassino` pela aba de Atores.
@@ -64,7 +70,7 @@ A Release **v0.4.2** contém: `brutal-rpg-v0.4.2.zip`, `system.json`, `RELEASE_v
 
 `https://raw.githubusercontent.com/tulioscost/brutal-rpg-nao-oficial/main/system.json`
 
-O `system.json` na raiz do repositório aponta para o arquivo `brutal-rpg-v0.4.2.zip` da Release `v0.4.2`. **Esse link só funciona quando o código-fonte e a Release tiverem sido publicados**, com esses nomes exatos. Para publicação, consulte [docs/PUBLICACAO.md](docs/PUBLICACAO.md).
+O `system.json` na raiz do repositório aponta para o arquivo `brutal-rpg-v0.5.4.zip` da Release `v0.5.4`. **Esse link só funciona quando o código-fonte e a Release tiverem sido publicados**, com esses nomes exatos. Para publicação, consulte [docs/PUBLICACAO.md](docs/PUBLICACAO.md).
 
 ## Recursos presentes
 
@@ -84,7 +90,7 @@ O `system.json` na raiz do repositório aponta para o arquivo `brutal-rpg-v0.4.2
 - Ações gerais operacionalizadas: Assustar, Ferir, Matar e Escapar.
 - Condições e Dados Marcadores; Ferida acumulada em 6 provoca morte; Sequela cumulativa.
 - Criação de Pistas do Mundo quando a Pilha da Diretora chega a zero em Encontro.
-- Logs detalhados no chat; dados rolados via API nativa do Foundry (outros módulos visuais de dados são opcionais).
+- Logs detalhados no chat; dados rolados via API nativa do Foundry e Dice So Nice obrigatório para exibição tridimensional.
 
 ## O que ainda requer atuação manual da Diretora
 
@@ -164,3 +170,15 @@ Esta versão aplica uma nova direção de arte ao sistema: visual de filme trash
 
 ## Atualização v0.5.1
 A aparência do sistema foi refinada usando diretamente os mockups gerados como referência visual para a skin do Foundry.
+
+
+## Atualização v0.5.2
+Retratos agora simulam uma câmera de segurança degradada e o chat do sistema adota a mesma identidade visual trash/VHS.
+
+
+## Atualização v0.5.3
+A identidade visual do BRUTAL agora cobre também as rolagens do chat, a sidebar do Foundry e uma splash art definitiva para o sistema.
+
+
+## Atualização v0.5.5
+A lateral direita, o chat e os controles de rolagem agora têm aparência inspirada diretamente na frente de videocassetes clássicos.

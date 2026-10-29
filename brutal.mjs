@@ -1,3 +1,4 @@
+import {decorateChatMessageHTML} from "./module/chat-theme.mjs";
 import {SurvivorData,KillerData,BrutalItemData} from "./module/models.mjs";
 import {BrutalActorSheet,BrutalItemSheet} from "./module/sheets.mjs";
 import {setupAPI,receiveSocket} from "./module/rules.mjs";
@@ -31,7 +32,11 @@ Hooks.once("init",()=>{
 Hooks.on("diceSoNiceRollStart",(_messageId,context)=>{applyBrutalDice(context?.roll);});
 // Hook documentado do Dice So Nice: só é disparado depois da preparação 3D.
 Hooks.once("diceSoNiceReady",async dice3d=>{try{await registerBrutalDice(dice3d);}catch(error){console.error("BRUTAL | Falha no dado personalizado",error);ui.notifications.error("BRUTAL: o dado personalizado não foi registrado. Consulte F12.");}});
+// Hook suportado no Foundry 14: recebe HTMLElement (sem jQuery).
+Hooks.on("renderChatMessageHTML",decorateChatMessageHTML);
+
 Hooks.once("ready",async()=>{
+  globalThis.document?.body?.classList?.add("brutal-vhs-active");
   // Reparo conservador de mundos que já possuíam uma ficha antiga selecionada.
   // Não altera a preferência pessoal de outra ficha.
   if(!game.modules.get("dice-calculator")?.active||!game.modules.get("dice-so-nice")?.active){
