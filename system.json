@@ -2,8 +2,8 @@
   "id": "brutal-rpg",
   "type": "system",
   "title": "BRUTAL RPG — Sistema Comunitário",
-  "description": "Sistema não oficial BRUTAL 0.3 para Foundry VTT 14 com estética trash/VHS, botões de videocassete e ícones preservados e identificáveis na sidebar, chat e Dice Tray.",
-  "version": "0.5.6",
+  "description": "BRUTAL RPG 0.3 não oficial para Foundry VTT 14. Corrige ícones invisíveis na barra lateral e amplia a foto de Ator em 2×, mantendo VHS, Dice Tray, Dice So Nice e compêndios.",
+  "version": "0.5.7",
   "compatibility": {
     "minimum": "14",
     "verified": "14",
@@ -56,7 +56,7 @@
   "background": "assets/theme/splash-vhs-trash.png",
   "url": "https://github.com/tulioscost/brutal-rpg-nao-oficial",
   "manifest": "https://raw.githubusercontent.com/tulioscost/brutal-rpg-nao-oficial/main/system.json",
-  "download": "https://github.com/tulioscost/brutal-rpg-nao-oficial/releases/download/v0.5.6/brutal-rpg-v0.5.6.zip",
+  "download": "https://github.com/tulioscost/brutal-rpg-nao-oficial/releases/download/v0.5.7/brutal-rpg-v0.5.7.zip",
   "readme": "https://github.com/tulioscost/brutal-rpg-nao-oficial/blob/main/README.md",
   "relationships": {
     "requires": [

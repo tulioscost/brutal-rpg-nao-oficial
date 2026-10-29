@@ -186,3 +186,7 @@ A lateral direita, o chat e os controles de rolagem agora têm aparência inspir
 
 ## Atualização v0.5.6
 Refino visual para preservar a leitura dos ícones dos botões, mantendo a estética de videocassete sem esconder os símbolos originais.
+
+
+### Correção v0.5.7
+Os botões da sidebar preservam os glifos originais do Foundry; retratos nas fichas têm 252×292 px em desktop (redução responsiva em telas pequenas).

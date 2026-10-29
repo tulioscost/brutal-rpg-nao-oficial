@@ -1,3 +1,8 @@
+## v0.5.7 — Ícones visíveis e retrato 2×
+- Restauração de glifos do Foundry e Font Awesome nos botões VHS da sidebar e do Dice Tray.
+- Retrato de Ator ampliado para 252×292 px, com responsividade.
+- Testes de regressão para ícones e retrato.
+
 ## v0.5.4
 - Novo hook de chat do Foundry 14 e classe de mensagem própria.
 - Skin de rolagens e sidebar com CSS isolado e carregado por último.
