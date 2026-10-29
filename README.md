@@ -182,3 +182,7 @@ A identidade visual do BRUTAL agora cobre também as rolagens do chat, a sidebar
 
 ## Atualização v0.5.5
 A lateral direita, o chat e os controles de rolagem agora têm aparência inspirada diretamente na frente de videocassetes clássicos.
+
+
+## Atualização v0.5.6
+Refino visual para preservar a leitura dos ícones dos botões, mantendo a estética de videocassete sem esconder os símbolos originais.

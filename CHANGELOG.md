@@ -6,6 +6,11 @@
 
 # Changelog
 
+## v0.5.6
+- Ajuste dos botões para manter ícones e símbolos originais claramente identificáveis.
+- Botões icônicos da sidebar, chat e Dice Tray ganharam layout compacto e centralizado.
+- Preservação explícita de ícones Font Awesome, SVGs e símbolos textuais nas interações visuais do tema VHS.
+
 ## v0.5.5
 - Sidebar, chat e botões do Dice Tray reformulados para parecerem botões de videocassete.
 - Campos de entrada do chat e do Dice Tray agora simulam visores digitais esverdeados.
