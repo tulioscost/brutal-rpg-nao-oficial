@@ -2,8 +2,8 @@
   "id": "brutal-rpg",
   "type": "system",
   "title": "BRUTAL RPG — Sistema Comunitário",
-  "description": "Sistema não oficial BRUTAL 0.3 para Foundry VTT 14: correção de abertura das fichas, 152 artes de compêndios e d6 ilustrado automático via Dice So Nice.",
-  "version": "0.4.1",
+  "description": "Sistema não oficial BRUTAL 0.3 para Foundry VTT 14 com estética inspirada diretamente em cartazes de filme trash, VHS de locadora e interface desgastada.",
+  "version": "0.5.1",
   "compatibility": {
     "minimum": "14",
     "verified": "14",
@@ -52,10 +52,10 @@
   "primaryTokenAttribute": "pool",
   "secondaryTokenAttribute": "escape",
   "socket": true,
-  "background": "assets/background.svg",
+  "background": "assets/theme/trash-poster-bg.png",
   "url": "https://github.com/tulioscost/brutal-rpg-nao-oficial",
   "manifest": "https://raw.githubusercontent.com/tulioscost/brutal-rpg-nao-oficial/main/system.json",
-  "download": "https://github.com/tulioscost/brutal-rpg-nao-oficial/releases/download/v0.4.1/brutal-rpg-v0.4.1.zip",
+  "download": "https://github.com/tulioscost/brutal-rpg-nao-oficial/releases/download/v0.5.1/brutal-rpg-v0.5.1.zip",
   "readme": "https://github.com/tulioscost/brutal-rpg-nao-oficial/blob/main/README.md",
   "relationships": {
     "requires": [
