@@ -11,6 +11,11 @@
 
 # Changelog
 
+## v0.5.8
+- Ajuste da tipografia da sidebar para evitar textos extrapolando a largura do painel.
+- Títulos, subtítulos, notas e botões das abas de configuração agora quebram corretamente e usam tamanhos menores.
+- Mantido o retrato ampliado 2x e os ícones legíveis da versão anterior.
+
 ## v0.5.6
 - Ajuste dos botões para manter ícones e símbolos originais claramente identificáveis.
 - Botões icônicos da sidebar, chat e Dice Tray ganharam layout compacto e centralizado.

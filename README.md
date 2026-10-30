@@ -190,3 +190,7 @@ Refino visual para preservar a leitura dos ícones dos botões, mantendo a esté
 
 ### Correção v0.5.7
 Os botões da sidebar preservam os glifos originais do Foundry; retratos nas fichas têm 252×292 px em desktop (redução responsiva em telas pequenas).
+
+
+## Atualização v0.5.8
+Refino da barra lateral para impedir overflow de títulos e botões, preservando a estética VHS e o retrato ampliado da ficha.
